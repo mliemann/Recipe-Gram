@@ -1,0 +1,21 @@
+[
+  {
+    "recipe_name": "French Toast",
+    "category": "Breakfast",
+    "visibility": true,
+    "ingredients": "bread milk eggs cinnamon",
+    "directions": "mix milk eggs cinnamon together, dip bread in mixture, cook in skillet on medium heat",
+    "description": "most delicious simple french toast",
+    "user_id": 1
+  },
+  {
+    "recipe_name": "Meatloaf",
+    "category": "Dinner",
+    "visibility": false,
+    "ingredients": "ground beef bread crumbs onion garlic powder",
+    "directions": "mix together all the ingredients place mixture in loaf pan bake at 350 for 1 hour",
+    "description": "simple meatloaf",
+    "user_id": 2
+  }
+
+]

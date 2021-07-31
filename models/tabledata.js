@@ -1,4 +1,4 @@
-const { Sequelize, Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/config');
 
 class Table extends Model {}
@@ -33,7 +33,6 @@ Table.init(
       allowNull: false,
       validate:{
         notEmpty: true,
-        is: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/g
       }
     },
     directions: {
