@@ -1,5 +1,5 @@
 {
-  "name": "tech-blog",
+  "name": "Grannies Recipes",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coding-boot-camp/module-14-project-mvc.git"
+    "url": "git+https://github.com/mliemann/Recipe-Search"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/coding-boot-camp/module-14-project-mvc/issues"
+    "url": "https://github.com/mliemann/Recipe-Search"
   },
-  "homepage": "https://github.com/coding-boot-camp/module-14-project-mvc#readme",
+  "homepage": "https://github.com/mliemann/Recipe-Search",
   "dependencies": {
     "bcrypt": "^4.0.1",
     "connect-session-sequelize": "^6.1.1",
