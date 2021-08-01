@@ -1,5 +1,5 @@
-const User = require('./userdata');
-const Table = require('./tabledata');
+const User = require('./User');
+const Table = require('./Table');
 
 
 Table.belongsTo(User, {
