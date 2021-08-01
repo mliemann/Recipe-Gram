@@ -12,7 +12,7 @@ const seedDatabase = async () => {
     returning: true,
   });
 //Need to test
-  for (const recipe of recipeData) {
+  for (const post of recipeData) {
     await Post.create({
       ...post,
       user_id: users[Math.floor(Math.random() * users.length)].id,
