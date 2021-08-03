@@ -27,7 +27,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/project/:id', async (req, res) => {
+router.get('/recipe/:id', async (req, res) => {
   try {
     const tableData = await Table.findByPk(req.params.id, {
       include: [
@@ -40,7 +40,7 @@ router.get('/project/:id', async (req, res) => {
 
     const table = tableData.get({ plain: true });
 
-    res.render('project', {
+    res.render('recipe', {
       ...table,
       logged_in: req.session.logged_in
     });
@@ -55,7 +55,7 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Table }],
+      include: [Table],
     });
 
     const user = userData.get({ plain: true });

@@ -1,8 +1,8 @@
-const sequelize = require('../config/connection');
-const { User, Post } = require('../models');
+const sequelize = require('../config/config');
+const { User, Table } = require('../models');
 
 const userData = require('./userData.json');
-const projectData = require('./recipeData.json');
+const tableData = require('./recipeData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -11,15 +11,15 @@ const seedDatabase = async () => {
     individualHooks: true,
     returning: true,
   });
-//Need to test
-  for (const post of recipeData) {
-    await Post.create({
-      ...post,
+
+  for (const table of tableData) {
+    await Table.create({
+      ...table,
       user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
 
   process.exit(0);
-};   
+};
 
 seedDatabase();
