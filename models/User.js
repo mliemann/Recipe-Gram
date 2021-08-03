@@ -18,12 +18,14 @@ User.init(
     },
     user_name: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
+      defaultValue: "",
     },
     email: {
       type: DataTypes.STRING,
       isNull: true,
       allowNull: false,
+      defaultValue: "",
       validate:{
         notEmpty: true,
         isEmail: true
@@ -32,6 +34,7 @@ User.init(
     password: {
       type: DataTypes.STRING,
       allowNull: false,
+      defaultValue: "",
       validate:{
         notEmpty: true,
         is: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/g

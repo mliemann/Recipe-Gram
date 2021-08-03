@@ -1,8 +1,8 @@
-const sequelize = require('../config/connection');
-const { User, Post } = require('../models');
+const sequelize = require('../config/config');
+const { User, Table } = require('../models');
 
 const userData = require('./userData.json');
-const projectData = require('./recipeData.json');
+const recipeData = require('./recipeData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -12,9 +12,9 @@ const seedDatabase = async () => {
     returning: true,
   });
 //Need to test
-  for (const post of recipeData) {
-    await Post.create({
-      ...post,
+  for (const recipe of recipeData) {
+    await Table.create({
+      ...recipe,
       user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }

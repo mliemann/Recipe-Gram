@@ -14,6 +14,7 @@ Table.init(
     recipe_name: {
       type: DataTypes.STRING,
       allowNull: false,
+      defaultValue: "default",
       validate:{
         notEmpty: true,
       }
@@ -21,6 +22,7 @@ Table.init(
     category: {
       type: DataTypes.STRING,
       allowNull: false,
+      defaultValue: "default",
       validate:{
         notEmpty: true,
       }
@@ -31,6 +33,7 @@ Table.init(
     ingredients: {
       type: DataTypes.STRING,
       allowNull: false,
+      defaultValue: "default",
       validate:{
         notEmpty: true,
       }
@@ -38,13 +41,15 @@ Table.init(
     directions: {
       type: DataTypes.STRING,
       allowNull: false,
+      defaultValue: "default",
       validate:{
         notEmpty: true,
       }
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(4096),
       allowNull: false,
+      defaultValue: "default",
       validate:{
         notEmpty: true,
       }
