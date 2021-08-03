@@ -18,25 +18,25 @@ Table.init(
         notEmpty: true,
       }
     },
-    category: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate:{
-        notEmpty: true,
-      }
-    },
+    // category: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    //   validate:{
+    //     notEmpty: true,
+    //   }
+    // },
     visibility: {
       type: DataTypes.BOOLEAN,
     },
     ingredients: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
       validate:{
         notEmpty: true,
       }
     },
     directions: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
       validate:{
         notEmpty: true,
@@ -55,7 +55,15 @@ Table.init(
         model: 'user',
         key: 'id',
       },
+    },
+    category_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'category',
+        key: 'id',
+      },
     }
+
   },
   {
     sequelize,

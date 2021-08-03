@@ -32,10 +32,10 @@ User.init(
     password: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate:{
-        notEmpty: true,
-        is: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/g
-      }
+      // validate:{
+        // notEmpty: true,
+        // is: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/g
+      // }
     }
   },
   

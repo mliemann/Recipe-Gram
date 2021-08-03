@@ -52,6 +52,19 @@ a {
     text-decoration: none;
 }
 
+#logout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: blanchedalmond;
+    font-size: 30px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+
+
+
 /*Rows*/
 .container {
     display: flex;
