@@ -62,8 +62,11 @@ Table.init(
         model: 'category',
         key: 'id',
       },
+    },
+    url: {
+      type: DataTypes.TEXT,
+      allowNull: true
     }
-
   },
   {
     sequelize,
