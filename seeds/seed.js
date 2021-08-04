@@ -1,8 +1,10 @@
 const sequelize = require('../config/config');
-const { User, Table } = require('../models');
+const { User, Table, Category } = require('../models');
 
 const userData = require('./userData.json');
 const tableData = require('./recipeData.json');
+const catData = require('./catData.json');
+
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -11,6 +13,12 @@ const seedDatabase = async () => {
     individualHooks: true,
     returning: true,
   });
+
+  const cats = await Category.bulkCreate(catData, {
+    individualHooks: true,
+    returning: true,
+  });
+
 
   for (const table of tableData) {
     await Table.create({
