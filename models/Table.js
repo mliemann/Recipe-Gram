@@ -65,7 +65,7 @@ Table.init(
     },
     url: {
       type: DataTypes.TEXT,
-      allowNull: true
+    allowNull: true
     }
   },
   {
