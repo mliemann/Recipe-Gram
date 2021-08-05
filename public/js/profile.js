@@ -103,8 +103,9 @@ const newFormHandler = async (event) => {
 const delButtonHandler = async (event) => {
   if (event.target.hasAttribute("data-id")) {
     const id = event.target.getAttribute("data-id");
-
-    const response = await fetch(`/api/recipe/${id}`, {
+    console.log(id);
+ 
+    const response = await fetch(`api/tables/${id}`, {
       method: "DELETE",
     });
 
@@ -120,6 +121,6 @@ const delButtonHandler = async (event) => {
 //   .querySelector('.new-recipe-form')
 //   .addEventListener('submit', newFormHandler);
 
-// document
-//   .querySelector('.project-list')
-//   .addEventListener('click', delButtonHandler);
+document
+  .querySelector('.recipe-list')
+  .addEventListener('click', delButtonHandler);
