@@ -7,7 +7,7 @@
     "description": "most delicious simple french toast",
     "user_id": 1,
     "category_id": 1,
-    "url": "https://bestteamproj2.s3.amazonaws.com/04da9f86c6fc525e58d6cb5efa728f3f"
+    "url": "https://bestteamproj2.s3.amazonaws.com/d8c96b36e02fe429bade7f27a1afd3ce"
   },
   {
     "recipe_name": "Grilled Cheese",
@@ -17,7 +17,7 @@
     "description": "gooey grilled cheese",
     "user_id": 2,
     "category_id": 2,
-    "url": "https://bestteamproj2.s3.amazonaws.com/04da9f86c6fc525e58d6cb5efa728f3f"
+    "url": "https://bestteamproj2.s3.amazonaws.com/d8c96b36e02fe429bade7f27a1afd3ce"
   },
   {
     "recipe_name": "Pizza",
@@ -27,6 +27,6 @@
     "description": "delicious pizza",
     "user_id": 3,
     "category_id": 3,
-    "url": "https://bestteamproj2.s3.amazonaws.com/04da9f86c6fc525e58d6cb5efa728f3f"
+    "url": "https://bestteamproj2.s3.amazonaws.com/d8c96b36e02fe429bade7f27a1afd3ce"
   }
 ]

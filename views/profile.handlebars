@@ -19,30 +19,46 @@
         />
       </div>
       <div class="form-group">
-        <fieldset class="large-5 cell">
+        <fieldset class="large-5 cell recipe-category">
           <legend>What category:</legend>
           <input
             type="radio"
             name="Category"
-            value="Breakfast Food"
+            value="1"
             id="breakfastfood"
             required
           /><label for="americanfood">Breakfast Food</label>
           <input
             type="radio"
             name="Category"
-            value="Lunch Food"
+            value="2"
             id="lunchfood"
           /><label for="asianfood">Lunch Food</label>
           <input
             type="radio"
             name="Category"
-            value="Dinner Food"
+            value="3"
             id="dinnerfood"
           /><label for="eufood">Dinner Food</label>
         </fieldset>
       </div>
-
+            <div class="form-group">
+        <fieldset class="large-5 cell recipe-visibility">
+          <legend>Select one:</legend>
+          <input
+            type="radio"
+            name="Category2"
+            value= "1"
+            id="breakfastfood"
+          /><label for="americanfood">Public</label>
+          <input
+            type="radio"
+            name="Category2"
+            value="0"
+            id="lunchfood"
+          /><label for="asianfood">Private</label>
+        </fieldset>
+      </div>
       <div class="form-group">
         <label for="recipe-desc">description:</label>
         <textarea
@@ -67,13 +83,13 @@
           name="recipe-directions"
         ></textarea>
       </div>
-      <div class="form-group">
+      {{!-- <div class="form-group">
         <button type="submit" class="btn btn-primary">Create</button>
-      </div>
+      </div> --}}
     </form>
         <form id="imageForm">
       <input id="imageInput" type="file" accept="image/*" />
-      <button type="submit">Upload</button>
+      <button type="submit" class="btn btn-primary">Create</button>
     </form>
 
   </div>
