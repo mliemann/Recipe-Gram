@@ -28,5 +28,55 @@
     "user_id": 3,
     "category_id": 3,
     "url": "https://bestteamproj2.s3.amazonaws.com/d8c96b36e02fe429bade7f27a1afd3ce"
+  },
+  {
+    "recipe_name": "Apricot Glazed Chicken Breasts",
+    "visibility": false,
+    "ingredients": "3 tablespoons apricot preserves, 1 teaspoon fresh ginger paste, ½ teaspoon minced fresh rosemary, 2 (8 ounce) boneless, skinless chicken breasts, 1 teaspoon vegetable oil, salt and ground black pepper to taste.",
+    "directions": "Stir apricot preserves, ginger paste, and rosemary together in a small bowl. Microwave for about 20 seconds to make preserves easier to spread. Pound chicken breasts to uniform thickness and pat dry with a paper towel. Rub with oil and season with salt and pepper. Preheat the air fryer to 400 degrees F (200 degrees C). Spray the basket with cooking spray and add chicken breasts in a single layer. Air fry for 4 minutes. Flip and rotate the position of the chicken breasts. Brush with the apricot mixture. Return basket to the air fryer and cook until chicken is no longer pink in the center and the juices run clear, 8 to 12 minutes. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C). Transfer chicken to a plate, cover loosely with aluminum foil, and let sit for 5 minutes. Cut chicken breasts into slices and serve.",
+    "description": "exquisite chicken breast",
+    "user_id": 4,
+    "category_id": 4,
+    "url": "https://images-gmi-pmc.edge-generalmills.com/5069d42a-d26f-4906-9eaf-7122a27d7900.jpg"
+  },
+  {
+    "recipe_name": "Easy Meatloaf",
+    "visibility": false,
+    "ingredients": "1 ½ pounds ground beef, 1 egg, 1 onion, chopped, 1 cup milk, 1 cup dried bread crumbs, salt and pepper to taste, 2 tablespoons brown sugar, 2 tablespoons prepared mustard, ⅓ cup ketchup",
+    "directions": "Preheat oven to 350 degrees F (175 degrees C). In a large bowl, combine the beef, egg, onion, milk and bread OR cracker crumbs. Season with salt and pepper to taste and place in a lightly greased 9x5-inch loaf pan, or form into a loaf and place in a lightly greased 9x13-inch baking dish. In a separate small bowl, combine the brown sugar, mustard and ketchup. Mix well and pour over the meatloaf. Bake at 350 degrees F (175 degrees C) for 1 hour.",
+    "description": "excellent meatloaf",
+    "user_id": 5,
+    "category_id": 5,
+    "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2020%2F06%2F19%2FEasy-Meatloaf.jpg&q=85"
+  },
+  {
+    "recipe_name": "Classic and Simple Meat Lasagna",
+    "visibility": false,
+    "ingredients": "12 whole wheat lasagna noodles, 1 pound lean ground beef, 2 cloves garlic, chopped, ½ teaspoon garlic powder, 1 teaspoon dried oregano, or to taste, salt and ground black pepper to taste, 1 (16 ounce) package cottage cheese, 2 eggs, ½ cup shredded Parmesan cheese, 1 ½ (25 ounce) jars tomato-basil pasta sauce, 2 cups shredded mozzarella cheese",
+    "directions": "Preheat oven to 350 degrees F (175 degrees C). Fill a large pot with lightly salted water and bring to a rolling boil over high heat. Once the water is boiling, add the lasagna noodles a few at a time, and return to a boil. Cook the pasta uncovered, stirring occasionally, until the pasta has cooked through, but is still firm to the bite, about 10 minutes. Remove the noodles to a plate. Place the ground beef into a skillet over medium heat, add the garlic, garlic powder, oregano, salt, and black pepper to the skillet. Cook the meat, chopping it into small chunks as it cooks, until no longer pink, about 10 minutes. Drain excess grease. In a bowl, mix the cottage cheese, eggs, and Parmesan cheese until thoroughly combined. Place 4 noodles side by side into the bottom of a 9x13-inch baking pan; top with a layer of the tomato-basil sauce, a layer of ground beef mixture, and a layer of the cottage cheese mixture. Repeat layers twice more, ending with a layer of sauce; sprinkle top with the mozzarella cheese. Cover the dish with aluminum foil. Bake in the preheated oven until the casserole is bubbling and the cheese has melted, about 30 minutes. Remove foil and bake until cheese has begun to brown, about 10 more minutes. Allow to stand at least 10 minutes before serving.",
+    "description": "easy classic lasagna",
+    "user_id": 6,
+    "category_id": 6,
+    "url": "https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=1896&h=948&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F994958.jpg"
+  },
+  {
+    "recipe_name": "Bacon and Egg Tacos",
+    "visibility": false,
+    "ingredients": "6 eggs, ¼ cup crumbled cooked bacon, 2 tablespoons butter, 3 slices American cheese, diced, ¼ teaspoon salt, ¼ teaspoon ground black pepper, 6 flour tortillas, 1 cup salsa (Optional)",
+    "directions": "Whisk eggs together in a bowl; stir in bacon. Melt butter in a skillet over medium heat. Add egg mixture; cook and stir until eggs are completely set, 2 to 3 minutes. Stir in American cheese, salt, and pepper. Wrap tortillas in damp paper towels; microwave until warmed through, 30 seconds to 1 minute. Spoon 1/4 cup egg mixture into the center of each tortilla; fold sides to cover. Serve with salsa.",
+    "description": "simple tasty breakfast tacos",
+    "user_id": 7,
+    "category_id": 7,
+    "url": "https://images.media-allrecipes.com/userphotos/4484963.jpg"
+  },
+  {
+    "recipe_name": "Basic Italian Bean Soup",
+    "visibility": false,
+    "ingredients": "olive oil, 1 large onion, diced, 2 cloves garlic, or more to taste, 2 cups tomato sauce, 24 ounces prepared cannellini beans, 1 tablespoon dried basil, ½ teaspoon oregano, salt and ground black pepper to taste",
+    "directions": "Heat olive oil in a pot over medium-high heat. Cook and stir onion in hot oil until tender, about 5 minutes; add garlic and continue cooking until fragrant, 1 to 2 minutes more. Pour tomato sauce into the pot; stir. Add cannelini beans, basil, oregano, salt, and pepper. Bring the mixture to a simmer, reduce heat to medium-low, and cook until the beans are hot, 5 to 7 minutes more.",
+    "description": "delicious bean soup",
+    "user_id": 8,
+    "category_id": 8,
+    "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1938306.jpg"
   }
 ]
