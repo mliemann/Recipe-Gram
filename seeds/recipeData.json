@@ -37,7 +37,7 @@
     "description": "exquisite chicken breast",
     "user_id": 4,
     "category_id": 4,
-    "url": "https://bestteamproj2.s3.amazonaws.com/d8c96b36e02fe429bade7f27a1afd3ce"
+    "url": "https://images-gmi-pmc.edge-generalmills.com/5069d42a-d26f-4906-9eaf-7122a27d7900.jpg"
   },
   {
     "recipe_name": "Easy Meatloaf",
@@ -47,7 +47,7 @@
     "description": "excellent meatloaf",
     "user_id": 5,
     "category_id": 5,
-    "url": "https://bestteamproj2.s3.amazonaws.com/d8c96b36e02fe429bade7f27a1afd3ce"
+    "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2020%2F06%2F19%2FEasy-Meatloaf.jpg&q=85"
   },
   {
     "recipe_name": "Classic and Simple Meat Lasagna",
@@ -57,7 +57,7 @@
     "description": "easy classic lasagna",
     "user_id": 6,
     "category_id": 6,
-    "url": "https://bestteamproj2.s3.amazonaws.com/d8c96b36e02fe429bade7f27a1afd3ce"
+    "url": "https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=1896&h=948&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F994958.jpg"
   },
   {
     "recipe_name": "Bacon and Egg Tacos",
@@ -67,7 +67,7 @@
     "description": "simple tasty breakfast tacos",
     "user_id": 7,
     "category_id": 7,
-    "url": "https://bestteamproj2.s3.amazonaws.com/d8c96b36e02fe429bade7f27a1afd3ce"
+    "url": "https://images.media-allrecipes.com/userphotos/4484963.jpg"
   },
   {
     "recipe_name": "Basic Italian Bean Soup",
@@ -77,6 +77,6 @@
     "description": "delicious bean soup",
     "user_id": 8,
     "category_id": 8,
-    "url": "https://bestteamproj2.s3.amazonaws.com/d8c96b36e02fe429bade7f27a1afd3ce"
+    "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1938306.jpg"
   }
 ]
