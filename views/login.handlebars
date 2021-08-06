@@ -1,22 +1,48 @@
+
+
 <div class="row">
   <div class="col-md-6">
     <h2>Login</h2>
 
-    <form class="form login-form">
+    {{!-- <form class="form login-form">
       <div class="form-group">
-        <label for="email-login">email:</label>
+        <label for="email-login">Email:</label>
         <input class="form-input" type="text" id="email-login" />
       </div>
       <div class="form-group">
-        <label for="password-login">password:</label>
+        <label for="password-login">Password:</label>
         <input class="form-input" type="password" id="password-login" />
       </div>
       <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
+        <button class="btn btn-primary" type="submit">Login!</button>
+        <button class="btn btn-primary" type="Sign up">Sign up!</button>
       </div>
-    </form>
+    </form> --}}
   </div>
-  <div class="col-md-6">
+  </div>
+
+
+<form class="form login-form">
+  <div class="form-group">
+    <label for="email-login">Email Address</label>
+    <input type="text" class="form-control form-input" id="email-login" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="password-login">Password</label>
+    <input type="password" class="form-control form-input" id="password-login" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary" type="submit">Login!</button>
+    <small id="emailHelp" class="form-text text-muted">Don't have an account?</small>
+    <button class="btn btn-primary" type="Sign up">Sign up!</button>
+  </div>
+</form>
+
+
+  {{!-- This is the sign up code --}}
+
+  
+  {{!-- <div class="col-md-6">
     <h2>Signup</h2>
 
     <form class="form signup-form">
@@ -36,7 +62,7 @@
         <button class="btn btn-primary" type="submit">signup</button>
       </div>
     </form>
-  </div>
+  </div> --}}
 </div>
 
 <script src="./js/login.js"></script>

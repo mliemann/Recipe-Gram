@@ -20,15 +20,20 @@
     </p> --}}
   {{!-- </div>
 </div> --}}
-<div class="media-object stack-for-small">
-  <div class="media-object-section">
-    <div class="thumbnail">
-      <img src= {{table.url}} alt="recipe image" style="width:auto;height:150px;">
+
+
+  <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src={{table.url}} class="img-fluid rounded-start" alt="recipe image">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"><a href="/recipe/{{table.id}}">{{table.recipe_name}}</a></h5>
+        <p class="card-text">{{table.description}}</p>
+        <p class="card-text"><small class="text-muted">Created by {{table.user.user_name}}</small></p>
+      </div>
     </div>
   </div>
-  <div class="media-object-section">
-    <h4><a href="/recipe/{{table.id}}">{{table.recipe_name}}</a></h4>
-    <p>{{table.description}}</p>
-        <p>Created by {{table.user.user_name}}</p>
-  </div>
+</div>
 </div>{{/each}}
