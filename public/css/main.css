@@ -186,6 +186,12 @@ a {
     margin-top: 15px;
 }
 
+/* .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+} */
+
 /*Footer*/
 .footer {
     background-color: darkblue;
@@ -239,7 +245,7 @@ header, .project:not(:last-child) {
     text-decoration: none;
     font-size: 100%;
   }
-  
+   
   .no-button:hover {
     color: #065b83;
     text-decoration: underline;
