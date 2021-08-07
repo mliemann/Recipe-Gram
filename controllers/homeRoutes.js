@@ -117,9 +117,13 @@ router.get("/filtered/:id", async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ["user_name"],
+          attributes: ['user_name'],
         },
       ],
+      where: {
+        visibility: true,
+        //  [Op.or]: [{ id: user_id }]
+       }
     });
 
     // Serialize data so the template can read it
