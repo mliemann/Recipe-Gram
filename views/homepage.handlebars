@@ -1,3 +1,47 @@
+            <a
+              href="#"
+              class="nav-link filter-modal"
+              data-toggle="modal"
+              data-target=".bd-example-modal-lg"
+            >Filter Results</a>
+
+            <div
+              class="modal fade bd-example-modal-lg filter-modal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                        <div class="form-group">
+        <fieldset class="large-5 cell filter-category">
+          <legend>What category:</legend>
+          <input
+            type="checkbox"
+            name="filter"
+            value="1"
+            class= "filtered"
+          /><label for="americanfood">Breakfast</label>
+          <input
+            type="checkbox"
+            name="filter"
+            value="2"
+            class= "filtered"
+          /><label for="asianfood">Lunch</label>
+          <input
+            type="checkbox"
+            name="filter"
+            value="3"
+            class= "filtered"
+          /><label for="eufood">Dinner</label>
+            <button class="btn btn-primary filterBtn">Find</button>
+        </fieldset>
+      </div>
+
+                </div>
+              </div>
+            </div>
+
 <!-- Loop over each object in the projects array -->
 {{#each tables as |table| }}
 
@@ -15,6 +59,6 @@
     </div>
   </div>
 </div>
-</div>{{/each}}
+{{/each}}
 
 
