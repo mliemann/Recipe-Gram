@@ -22,7 +22,6 @@ router.get('/', async (req, res) => {
       ],
       where: {
         visibility: true,
-        //  [Op.or]: [{ id: user_id }]
        }
     });
 
@@ -110,6 +109,7 @@ router.get("/filtered/:id", async (req, res) => {
     // Get all projects and JOIN with user data
     const filterData = await Table.findAll({
       where: {
+        visibility: true,
         category_id: {
           [Op.in]: req.params.id.split(",")
         }
@@ -119,11 +119,7 @@ router.get("/filtered/:id", async (req, res) => {
           model: User,
           attributes: ['user_name'],
         },
-      ],
-      where: {
-        visibility: true,
-        //  [Op.or]: [{ id: user_id }]
-       }
+      ]
     });
 
     // Serialize data so the template can read it
