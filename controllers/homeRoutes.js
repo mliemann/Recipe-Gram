@@ -1,10 +1,17 @@
+/* eslint-disable vars-on-top */
 const router = require('express').Router();
 const { Table, User } = require('../models');
 const withAuth = require('../utils/auth');
-
+var Sequelize = require('sequelize');
+var Op = Sequelize.Op;
 
 router.get('/', async (req, res) => {
   try {
+    console.log(req.session);
+    var user_id = 0;
+    if (req.session && req.session.logged_in) {
+      user_id = req.session.user_id
+    }
     // Get all projects and JOIN with user data
     const tableData = await Table.findAll({
       include: [
@@ -13,6 +20,10 @@ router.get('/', async (req, res) => {
           attributes: ['user_name'],
         },
       ],
+      where: {
+        visibility: true,
+         [Op.or]: [{ id: user_id }]
+       }
     });
 
     // Serialize data so the template can read it
@@ -94,12 +105,14 @@ router.get('/signup', (req, res) => {
 });
 
 
-router.get("/", async (req, res) => {
+router.get("/filtered/:id", async (req, res) => {
   try {
     // Get all projects and JOIN with user data
     const filterData = await Table.findAll({
       where: {
-        category_id: 2,
+        category_id: {
+          [Op.in]: req.params.id.split(",")
+        }
       },
       include: [
         {
@@ -114,7 +127,6 @@ router.get("/", async (req, res) => {
 
     // Pass serialized data and session flag into template
     res.render("filtered", {
-      layout: "homepage",
       filters,
       logged_in: req.session.logged_in,
     });

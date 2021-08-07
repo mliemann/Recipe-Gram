@@ -24,17 +24,7 @@
   </div>
 </div>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
-        <a class="nav-link" href="/login">Login</a>
-        <a class="nav-link" href="/profile">Profile</a>
-      </div>
-    </div>
-  </div>
-</nav>
+
 
 
 
@@ -72,57 +62,28 @@
       <header class="display-flex justify-space-between align-center p-2">
         <h1><a href="/" class="headerh1">YUMMY</a>
         </h1> --}}
-        <nav>
-          {{#if logged_in}}
-            <a class="nav-item nav-link" href="/profile">profile</a>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-toggle="modal"
-              data-target=".bd-example-modal-lg"
-            >Large modal</button>
+      
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+       
+         {{#if logged_in}}
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link" href="/profile">Profile</a>
+            
+            
 
-            <div
-              class="modal fade bd-example-modal-lg"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="myLargeModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                        <div class="form-group">
-        <fieldset class="large-5 cell filter-category">
-          <legend>What category:</legend>
-          <input
-            type="checkbox"
-            name="filter"
-            value="1"
-            class= "filtered"
-          /><label for="americanfood">Breakfast</label>
-          <input
-            type="checkbox"
-            name="filter"
-            value="2"
-            class= "filtered"
-          /><label for="asianfood">Lunch</label>
-          <input
-            type="checkbox"
-            name="filter"
-            value="3"
-            class= "filtered"
-          /><label for="eufood">Dinner</label>
-            <button class="btn btn-primary filterBtn">Find</button>
-        </fieldset>
-      </div>
-
-                </div>
-              </div>
-            </div>
-
-            <button class="no-button" id="logout">logout</button>
+            <a href="#" class="nav-link" id="logout">Logout</a>
           {{else}}
-            <a href="/login">login</a>
+        <a class="nav-link active" aria-current="page" href="/">Home</a>
+        <a class="nav-link" href="/login">Login</a>
           {{/if}}
+      </div>
+    </div>
+  </div>
+
+         
         </nav>
       </header>
       <main class="container container-fluid mt-5">
@@ -151,7 +112,7 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/filter.js"></script>
+    <script src="/js/filter.js"></script>
 
   </body>
 </html>
