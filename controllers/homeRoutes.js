@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Table, User } = require('../models');
 const withAuth = require('../utils/auth');
 
+
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
@@ -26,6 +27,8 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
 
 router.get('/recipe/:id', async (req, res) => {
   try {
@@ -79,7 +82,7 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-//Still working on getting this to go to the signup page
+// Still working on getting this to go to the signup page
 router.get('/signup', (req, res) => {
 
   if (req.session.logged_in) {
@@ -89,5 +92,36 @@ router.get('/signup', (req, res) => {
 
   res.render('signup');
 });
+
+
+router.get("/", async (req, res) => {
+  try {
+    // Get all projects and JOIN with user data
+    const filterData = await Table.findAll({
+      where: {
+        category_id: 2,
+      },
+      include: [
+        {
+          model: User,
+          attributes: ["user_name"],
+        },
+      ],
+    });
+
+    // Serialize data so the template can read it
+    const filters = filterData.map((filter) => filter.get({ plain: true }));
+
+    // Pass serialized data and session flag into template
+    res.render("filtered", {
+      layout: "homepage",
+      filters,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 
 module.exports = router;
