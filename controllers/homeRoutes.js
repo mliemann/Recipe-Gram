@@ -1,3 +1,5 @@
+/* eslint-disable no-empty */
+/* eslint-disable no-unused-vars */
 /* eslint-disable vars-on-top */
 const router = require('express').Router();
 const { Table, User } = require('../models');
@@ -8,9 +10,9 @@ var Op = Sequelize.Op;
 router.get('/', async (req, res) => {
   try {
     console.log(req.session);
-    var user_id;
+    // var user_id;
     if (req.session && req.session.logged_in) {
-      user_id = req.session.user_id
+      // user_id = req.session.user_id
     }
     // Get all projects and JOIN with user data
     const tableData = await Table.findAll({
@@ -22,7 +24,6 @@ router.get('/', async (req, res) => {
       ],
       where: {
         visibility: true,
-        //  [Op.or]: [{ id: user_id }]
        }
     });
 
@@ -110,6 +111,7 @@ router.get("/filtered/:id", async (req, res) => {
     // Get all projects and JOIN with user data
     const filterData = await Table.findAll({
       where: {
+        visibility: true,
         category_id: {
           [Op.in]: req.params.id.split(",")
         }
@@ -119,11 +121,7 @@ router.get("/filtered/:id", async (req, res) => {
           model: User,
           attributes: ['user_name'],
         },
-      ],
-      where: {
-        visibility: true,
-        //  [Op.or]: [{ id: user_id }]
-       }
+      ]
     });
 
     // Serialize data so the template can read it
@@ -138,6 +136,37 @@ router.get("/filtered/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+router.get('/private', async (req, res) => {
+  try {
+    console.log(req.session);
+    if (req.session && req.session.logged_in) {
+    }
+    // Get all projects and JOIN with user data
+    const secretData = await Table.findAll({
+      include: [
+        {
+          model: User,
+          attributes: ['user_name'],
+        },
+      ],
+      where: {
+        visibility: false,
+        user_id: req.session.user_id
+       }
+    });
+
+    const secrets = secretData.map((secret) => secret.get({ plain: true }));
+
+    res.render('private', { 
+      secrets, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 
 
 module.exports = router;
