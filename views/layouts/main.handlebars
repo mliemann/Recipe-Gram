@@ -90,7 +90,31 @@
               aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                  ...
+                        <div class="form-group">
+        <fieldset class="large-5 cell filter-category">
+          <legend>What category:</legend>
+          <input
+            type="checkbox"
+            name="filter"
+            value="1"
+            class= "filtered"
+          /><label for="americanfood">Breakfast</label>
+          <input
+            type="checkbox"
+            name="filter"
+            value="2"
+            class= "filtered"
+          /><label for="asianfood">Lunch</label>
+          <input
+            type="checkbox"
+            name="filter"
+            value="3"
+            class= "filtered"
+          /><label for="eufood">Dinner</label>
+            <button class="btn btn-primary filterBtn">Find</button>
+        </fieldset>
+      </div>
+
                 </div>
               </div>
             </div>
@@ -127,5 +151,7 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/filter.js"></script>
+
   </body>
 </html>
