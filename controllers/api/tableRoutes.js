@@ -25,7 +25,7 @@ router.delete("/:id", withAuth, async (req, res) => {
     });
 
     if (!tableData) {
-      res.status(404).json({ message: "No project found with this id!" });
+      res.status(404).json({ message: "No recipe found with this id!" });
       return;
     }
 

@@ -8,11 +8,9 @@ imageForm.addEventListener("submit", async (event) => {
 
   console.log(file);
   if (file !== undefined) {
-    // get secure url from our server
     const { url } = await fetch("/s3Url").then((res) => res.json());
     console.log(url);
 
-    // post the image direclty to the s3 bucket
     await fetch(url, {
       method: "PUT",
       headers: {
@@ -24,7 +22,6 @@ imageForm.addEventListener("submit", async (event) => {
     imageUrl = url.split("?")[0];
     console.log(imageUrl);
 
-    // post requst to my server to store any extra data
     newFormHandler();
   } else {
     console.log("successful empty file");
@@ -33,13 +30,11 @@ imageForm.addEventListener("submit", async (event) => {
       "https://cdn2.vectorstock.com/i/thumb-large/08/86/grandma-granny-baker-cook-loaf-bread-vector-1590886.jpg";
     console.log(imageUrl);
 
-    // post requst to my server to store any extra data
     newFormHandler();
   }
 });
 
 const newFormHandler = async () => {
-  // event.preventDefault();
 
   const name = document.querySelector("#recipe-name").value.trim();
   let visibility = document.querySelector('input[name="visibility"]:checked').value;
