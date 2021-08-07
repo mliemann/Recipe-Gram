@@ -8,7 +8,7 @@ var Op = Sequelize.Op;
 router.get('/', async (req, res) => {
   try {
     console.log(req.session);
-    var user_id = 0;
+    var user_id;
     if (req.session && req.session.logged_in) {
       user_id = req.session.user_id
     }
@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
       ],
       where: {
         visibility: true,
-         [Op.or]: [{ id: user_id }]
+        //  [Op.or]: [{ id: user_id }]
        }
     });
 
