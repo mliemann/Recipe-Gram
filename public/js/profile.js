@@ -47,7 +47,7 @@ const newFormHandler = async (event) => {
   // event.preventDefault();
 
   const name = document.querySelector("#recipe-name").value.trim();
-  let visibility = document.querySelector('input[name="Category2"]:checked').value;
+  let visibility = document.querySelector('input[name="visibility"]:checked').value;
   console.log(visibility);
   let category = document.querySelector('input[name="Category"]:checked').value;
   const description = document.querySelector("#recipe-desc").value.trim();
