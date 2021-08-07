@@ -22,7 +22,6 @@ router.get('/', async (req, res) => {
       ],
       where: {
         visibility: true,
-        //  [Op.or]: [{ id: user_id }]
        }
     });
 
