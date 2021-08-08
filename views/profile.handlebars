@@ -6,13 +6,13 @@
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Enter new Recipe:</h3>
+    <h3>Create new recipe:</h3>
 
     <form class="form new-recipe-form">
       <div class="form-group">
-        <label for="recipe-name">recipe name:</label>
+        <label for="recipe-name">Recipe name:</label>
         <input
-          class="form-input"
+          class="form-input form-control"
           type="text"
           id="recipe-name"
           name="recipe-name"
@@ -20,26 +20,26 @@
       </div>
       <div class="form-group">
         <fieldset class="large-5 cell recipe-category">
-          <legend>What category:</legend>
+          <legend>Choose category:</legend>
           <input
             type="radio"
             name="Category"
             value="1"
             id="breakfastfood1"
             required
-          /><label for="americanfood">Breakfast Food</label>
+          /><label for="americanfood">Breakfast</label>
           <input
             type="radio"
             name="Category"
             value="2"
             id="lunchfood1"
-          /><label for="asianfood">Lunch Food</label>
+          /><label for="asianfood">Lunch</label>
           <input
             type="radio"
             name="Category"
             value="3"
             id="dinnerfood1"
-          /><label for="eufood">Dinner Food</label>
+          /><label for="eufood">Dinner</label>
         </fieldset>
       </div>
             <div class="form-group">
@@ -60,25 +60,25 @@
         </fieldset>
       </div>
       <div class="form-group">
-        <label for="recipe-desc">description:</label>
+        <label for="recipe-desc">Description:</label>
         <textarea
-          class="form-input"
+          class="form-input form-control"
           id="recipe-desc"
           name="recipe-desc"
         ></textarea>
       </div>
       <div class="form-group">
-        <label for="recipe-ingredients">ingredients:</label>
+        <label for="recipe-ingredients">Ingredients:</label>
         <textarea
-          class="form-input"
+          class="form-input form-control"
           id="recipe-ingredients"
           name="recipe-ingredients"
         ></textarea>
       </div>
       <div class="form-group">
-        <label for="recipe-directions">directions:</label>
+        <label for="recipe-directions">Directions:</label>
         <textarea
-          class="form-input"
+          class="form-input form-control"
           id="recipe-directions"
           name="recipe-directions"
         ></textarea>
@@ -96,7 +96,7 @@
 
   {{#if tables.length}}
     <div class="col-md-6 recipe-list">
-      <h3>Current Projects:</h3>
+      <h3>Your recipes:</h3>
 
       {{#each tables as |table|}}
         <div class="row mb-2">
