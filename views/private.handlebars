@@ -1,7 +1,7 @@
 <!-- Loop over each object in the projects array -->
  {{#if secrets.length}}
     <div class="col-md-6 recipe-list">
-      <h3>Current Projects:</h3>
+      <h3>Secret Recipes:</h3>
 
       {{#each secrets as |secret|}}
   <div class="card mb-3" style="max-width: 540px;">
@@ -13,7 +13,7 @@
       <div class="card-body">
         <h5 class="card-title"><a href="/recipe/{{secret.id}}">{{secret.recipe_name}}</a></h5>
         <p class="card-text">{{secret.description}}</p>
-        <p class="card-text"><small class="text-muted">Created by {{secret.user.user_name}}</small></p>
+        <p class="card-text"><small class="text-muted">Uploaded by {{secret.user.user_name}}</small></p>
       </div>
     </div>
   </div>

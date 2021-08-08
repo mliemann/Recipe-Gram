@@ -1,11 +1,17 @@
 [
-    {
-      "category_name": "Breakfast"
-    },
-    {
-      "category_name": "Lunch"
-    },
-    {
-      "category_name": "Dinner"
-    }
-  ]
+  {
+    "category_name": "Breakfast"
+  },
+  {
+    "category_name": "Lunch"
+  },
+  {
+    "category_name": "Dinner"
+  },
+  {
+    "category_name": "Dessert"
+  },
+  {
+    "category_name": "Snack"
+  }
+]
