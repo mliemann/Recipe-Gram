@@ -20,26 +20,38 @@
       </div>
       <div class="form-group">
         <fieldset class="large-5 cell recipe-category">
-          <legend>Choose category:</legend>
+         <legend>Select a category:</legend>
           <input
             type="radio"
             name="Category"
             value="1"
-            id="breakfastfood1"
+            id="breakfastfood"
             required
-          /><label for="americanfood">Breakfast</label>
+          /><label class="mr-1" for="breakfast">Breakfast</label>
           <input
             type="radio"
             name="Category"
             value="2"
-            id="lunchfood1"
-          /><label for="asianfood">Lunch</label>
+            id="lunchfood"
+          /><label class="mr-1" for="lunch">Lunch</label>
           <input
             type="radio"
             name="Category"
             value="3"
-            id="dinnerfood1"
-          /><label for="eufood">Dinner</label>
+            id="dinnerfood"
+          /><label class="mr-1" for="dinner">Dinner</label>
+          <input
+            type="radio"
+            name="Category"
+            value="3"
+            id="dessertfood"
+          /><label class="mr-1" for="dessert">Dessert</label>
+          <input
+            type="radio"
+            name="Category"
+            value="3"
+            id="snackfood"
+          /><label class="mr-1" for="snack">Snack</label>
         </fieldset>
       </div>
             <div class="form-group">
@@ -50,13 +62,13 @@
             name="visibility"
             value= "1"
             id="public"
-          /><label for="americanfood">Public</label>
+          /><label for="public">Public</label>
           <input
             type="radio"
             name="visibility"
             value="0"
             id="private"
-          /><label for="asianfood">Private</label>
+          /><label for="private">Private</label>
         </fieldset>
       </div>
       <div class="form-group">
@@ -83,9 +95,6 @@
           name="recipe-directions"
         ></textarea>
       </div>
-      {{!-- <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div> --}}
     </form>
         <form id="imageForm">
       <input id="imageInput" type="file" accept="image/*" />
@@ -115,4 +124,4 @@
   {{/if}}
 </div>
 
-<script src="./js/profile.js"></script>
+<script src="/js/profile.js"></script>

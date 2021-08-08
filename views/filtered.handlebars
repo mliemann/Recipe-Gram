@@ -15,25 +15,37 @@
                 <div class="modal-content">
                         <div class="form-group">
         <fieldset class="large-5 cell filter-category">
-          <legend>What category:</legend>
+          <legend>Select a Category:</legend>
           <input
             type="checkbox"
             name="filter"
             value="1"
             class= "filtered"
-          /><label for="americanfood">Breakfast</label>
+          /><label class="mr-1" for="breakfast">Breakfast</label>
           <input
             type="checkbox"
             name="filter"
             value="2"
             class= "filtered"
-          /><label for="asianfood">Lunch</label>
+          /><label class="mr-1" for="lunch">Lunch</label>
           <input
             type="checkbox"
             name="filter"
             value="3"
             class= "filtered"
-          /><label for="eufood">Dinner</label>
+          /><label class="mr-1" for="dinner">Dinner</label>
+          <input
+            type="checkbox"
+            name="filter"
+            value="4"
+            class= "filtered"
+          /><label class="mr-1" for="dessert">Dessert</label>
+          <input
+            type="checkbox"
+            name="filter"
+            value="5"
+            class= "filtered"
+          /><label class="mr-1" for="snack">Snack</label>
             <button class="btn btn-primary filterBtn">Find</button>
         </fieldset>
       </div>
@@ -54,7 +66,7 @@
       <div class="card-body">
         <h5 class="card-title"><a href="/recipe/{{filter.id}}">{{filter.recipe_name}}</a></h5>
         <p class="card-text">{{filter.description}}</p>
-        <p class="card-text"><small class="text-muted">Created by {{filter.user.user_name}}</small></p>
+        <p class="card-text"><small class="text-muted">Uploaded by {{filter.user.user_name}}</small></p>
       </div>
     </div>
   </div>

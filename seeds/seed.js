@@ -23,15 +23,6 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-
-
-  // for (const table of tableData) {
-  //   await Table.create({
-  //     ...table,
-  //     user_id: users[Math.floor(Math.random() * users.length)].id,
-  //   });
-  // }
-
   process.exit(0);
 };
 
