@@ -1,16 +1,13 @@
-$theme-colors: (
-    "primaryry": #32a852,
-    // "secondary":    
-    // "success":      
-    // "info":      
-    // "warning":      
-    // "danger":     
-    // "light":      
-    // "dark":
-);
 
-.card-body {
-    color:#32a852;
-}
 
 @import "node_modules/bootstrap/scss/bootstrap";
+
+
+
+  body {
+      background-image: url(/css/three.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  }
+

@@ -11,44 +11,44 @@
       crossorigin="anonymous"
     />
     {{!-- <link rel="stylesheet" href="/css/jass.css" />!--}}
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/main.scss" />
 
   </head>
 
   <body>
     
     
-<div class="jumbotron jumbotron-fluid info">
-  <div class="container has-bg-img">
-    <a class="navbar-brand" href="/">
-    <h1 class="display-4 primary">RecipeGram</h1>
-    </a>
-    <img class="bg-img" src="/public/css/background image.jpeg">
-  </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
+  <div class="jumbotron jumbotron-fluid info" style="background-color: white; padding: 0px; padding-top: 20px">
+    <div class="container has-bg-img d-flex">
+      <img src="/css/one.jpeg" style="height: 100px; width:100px;">
+      <a class="navbar-brand" href="/">
+      <h1 class="display-4" style = "color: rgb(135, 206, 135); font-family: Georgia; padding-left: 20px;">RecipeGram</h1>
+      </a>
+    </div>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: white !important;">
+    <div class="container-fluid" style="background-color: white; padding: 0px">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
        
          {{#if logged_in}}
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-            <a class="nav-link" href="/profile">Profile</a>
-            <a class="nav-link" href="/private">Secret Recipes</a>
+            <a style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="nav-link active" aria-current="page" href="/">Home</a>
+            <a style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="nav-link" href="/profile">Profile</a>
+            <a style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="nav-link" href="/private">Secret Recipes</a>
 
             
             
 
-            <a href="#" class="nav-link" id="logout">Logout</a>
+            <a style = "font-family: Georgia, 'Times New Roman', Times, serif;" href="#" class="nav-link" id="logout">Logout</a>
           {{else}}
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
-        <a class="nav-link" href="/login">Login</a>
+        <a style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="nav-link active" aria-current="page" href="/">Home</a>
+        <a style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="nav-link" href="/login">Login</a>
           {{/if}}
       </div>
     </div>
   </div>
 
 </div>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
 
 
 

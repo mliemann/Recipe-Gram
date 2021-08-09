@@ -3,7 +3,8 @@
               class="nav-link filter-modal"
               data-toggle="modal"
               data-target=".bd-example-modal-lg"
-            >Filter Results</a>
+              style = "font-family: Georgia, 'Times New Roman', Times, serif;"
+            >Filter results</a>
 
             <div
               class="modal fade bd-example-modal-lg filter-modal"
@@ -15,38 +16,38 @@
                 <div class="modal-content">
                         <div class="form-group">
         <fieldset class="large-5 cell filter-category">
-          <legend>Select a Category:</legend>
+          <legend style = "font-family: Georgia, 'Times New Roman', Times, serif;">Select a category:</legend>
           <input
             type="checkbox"
             name="filter"
             value="1"
             class= "filtered"
-          /><label class="mr-1" for="breakfast">Breakfast</label>
+          /><label class="mr-1" for="breakfast" style = "font-family: Georgia, 'Times New Roman', Times, serif;">Breakfast</label>
           <input
             type="checkbox"
             name="filter"
             value="2"
             class= "filtered"
-          /><label class="mr-1" for="lunch">Lunch</label>
+          /><label style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="mr-1" for="lunch">Lunch</label>
           <input
             type="checkbox"
             name="filter"
             value="3"
             class= "filtered"
-          /><label class="mr-1" for="dinner">Dinner</label>
+          /><label style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="mr-1" for="dinner">Dinner</label>
           <input
             type="checkbox"
             name="filter"
             value="4"
             class= "filtered"
-          /><label class="mr-1" for="dessert">Dessert</label>
+          /><label style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="mr-1" for="dessert">Dessert</label>
           <input
             type="checkbox"
             name="filter"
             value="5"
             class= "filtered"
-          /><label class="mr-1" for="snack">Snack</label>
-            <button class="btn btn-primary filterBtn">Find</button>
+          /><label style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="mr-1" for="snack">Snack</label>
+            <button style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="btn btn-primary filterBtn">Find</button>
         </fieldset>
       </div>
 
@@ -66,7 +67,7 @@
       <div class="card-body">
         <h5 class="card-title"><a href="/recipe/{{filter.id}}">{{filter.recipe_name}}</a></h5>
         <p class="card-text">{{filter.description}}</p>
-        <p class="card-text"><small class="text-muted">Uploaded by {{filter.user.user_name}}</small></p>
+        <p class="card-text" style = "font-family: Georgia, 'Times New Roman', Times, serif;" ><small class="text-muted">Uploaded by {{filter.user.user_name}}</small></p>
       </div>
     </div>
   </div>
