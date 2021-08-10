@@ -4,7 +4,7 @@
               data-toggle="modal"
               data-target=".bd-example-modal-lg"
               style = "font-family: Georgia, 'Times New Roman', Times, serif;"
-            >Filter Results</a>
+            >Filter results</a>
 
             <div
               class="modal fade bd-example-modal-lg filter-modal"
@@ -16,13 +16,13 @@
                 <div class="modal-content">
                         <div class="form-group">
         <fieldset class="large-5 cell filter-category">
-         <legend style = "font-family: Georgia, 'Times New Roman', Times, serif;" >What category:</legend>
+          <legend style = "font-family: Georgia, 'Times New Roman', Times, serif;">Select a category:</legend>
           <input
             type="checkbox"
             name="filter"
             value="1"
             class= "filtered"
-          /><label style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="mr-1" for="breakfast">Breakfast</label>
+          /><label class="mr-1" for="breakfast" style = "font-family: Georgia, 'Times New Roman', Times, serif;">Breakfast</label>
           <input
             type="checkbox"
             name="filter"
@@ -35,7 +35,7 @@
             value="3"
             class= "filtered"
           /><label style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="mr-1" for="dinner">Dinner</label>
-            <input
+          <input
             type="checkbox"
             name="filter"
             value="4"
@@ -55,23 +55,22 @@
               </div>
             </div>
 
-<!-- Loop over each object in the projects array -->
-{{#each tables as |table| }}
+
+{{#each filters as |filter| }}
 
   <div class="card mb-3" style="max-width: 100%;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src={{table.url}} class="img-fluid rounded-start" alt="recipe image">
+      <img src={{filter.url}} class="img-fluid rounded-start" alt="recipe image">
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title" style = "font-family: Georgia, 'Times New Roman', Times, serif;"><a href="/recipe/{{table.id}}">{{table.recipe_name}}</a></h5>
-        <p class="card-text"style = "font-family: Georgia, 'Times New Roman', Times, serif;">{{table.description}}</p>
-        <p class="card-text"style = "font-family: Georgia, 'Times New Roman', Times, serif;"><small class="text-muted">Uploaded by {{table.user.user_name}}</small></p>
+        <h5 class="card-title"><a href="/recipe/{{filter.id}}">{{filter.recipe_name}}</a></h5>
+        <p class="card-text">{{filter.description}}</p>
+        <p class="card-text" style = "font-family: Georgia, 'Times New Roman', Times, serif;" ><small class="text-muted">Uploaded by {{filter.user.user_name}}</small></p>
       </div>
     </div>
   </div>
 </div>
-{{/each}}
-
+</div>{{/each}}
 

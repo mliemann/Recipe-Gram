@@ -1,31 +1,27 @@
-const sequelize = require('../config/config');
-const { User, Table, Category } = require('../models');
+const sequelize = require("../config/config");
+const { User, Table, Category } = require("../models");
 
-const userData = require('./userData.json');
-const tableData = require('./recipeData.json');
-const catData = require('./catData.json');
-
+const userData = require("./userData.json");
+const tableData = require("./recipeData.json");
+const catData = require("./catData.json");
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
-  const users = await User.bulkCreate(userData, {
+  await Category.bulkCreate(catData, {
     individualHooks: true,
     returning: true,
   });
 
-  const cats = await Category.bulkCreate(catData, {
+  await User.bulkCreate(userData, {
     individualHooks: true,
     returning: true,
   });
 
-
-  for (const table of tableData) {
-    await Table.create({
-      ...table,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
-    });
-  }
+  await Table.bulkCreate(tableData, {
+    individualHooks: true,
+    returning: true,
+  });
 
   process.exit(0);
 };

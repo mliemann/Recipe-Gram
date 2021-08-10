@@ -13,5 +13,10 @@
     "user_name": "Mike",
     "email": "mike0@aol.com",
     "password": "password12345"
+  },
+  {
+    "user_name": "Dauphine",
+    "email": "dburns@yahoo.com",
+    "password": "password12345"
   }
 ]

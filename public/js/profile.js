@@ -8,11 +8,9 @@ imageForm.addEventListener("submit", async (event) => {
 
   console.log(file);
   if (file !== undefined) {
-    // get secure url from our server
     const { url } = await fetch("/s3Url").then((res) => res.json());
     console.log(url);
 
-    // post the image direclty to the s3 bucket
     await fetch(url, {
       method: "PUT",
       headers: {
@@ -24,27 +22,19 @@ imageForm.addEventListener("submit", async (event) => {
     imageUrl = url.split("?")[0];
     console.log(imageUrl);
 
-    // post requst to my server to store any extra data
     newFormHandler();
+  } else {
+    console.log("successful empty file");
 
-    // const img = document.createElement("img");
-    // img.src = imageUrl;
-    // document.body.appendChild(img);
-  } else { 
-    console.log("successful empty file")
-   
-
-
-    imageUrl = "https://cdn2.vectorstock.com/i/thumb-large/08/86/grandma-granny-baker-cook-loaf-bread-vector-1590886.jpg" 
+    imageUrl =
+      "https://cdn2.vectorstock.com/i/thumb-large/08/86/grandma-granny-baker-cook-loaf-bread-vector-1590886.jpg";
     console.log(imageUrl);
 
-    // post requst to my server to store any extra data
     newFormHandler();
   }
 });
 
-const newFormHandler = async (event) => {
-  // event.preventDefault();
+const newFormHandler = async () => {
 
   const name = document.querySelector("#recipe-name").value.trim();
   let visibility = document.querySelector('input[name="visibility"]:checked').value;
@@ -56,14 +46,14 @@ const newFormHandler = async (event) => {
     .value.trim();
   const directions = document.querySelector("#recipe-directions").value.trim();
   const recipeObj = {
-      recipe_name: name,
-      visibility: visibility,
-      ingredients: ingredients,
-      directions: directions,
-      description: description,
-      category_id: category,
-      url: imageUrl,
-  }
+    recipe_name: name,
+    visibility: visibility,
+    ingredients: ingredients,
+    directions: directions,
+    description: description,
+    category_id: category,
+    url: imageUrl,
+  };
 
   console.log(recipeObj);
 
@@ -78,33 +68,13 @@ const newFormHandler = async (event) => {
   } else {
     alert("Failed to sign up");
   }
-
-  // if (name && category && description && ingredients && directions) {
-  //   const response = await fetch(`/api/tables`, {
-  //     method: "POST",
-  //     body: [
-  //       description,
-  //       ingredients,
-  //       directions,
-  //     ],
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //   });
-
-  //   if (response.ok) {
-  //     document.location.replace('/profile');
-  //   } else {
-  //     alert('Failed to create project');
-  //   }
-  // }
 };
 
 const delButtonHandler = async (event) => {
   if (event.target.hasAttribute("data-id")) {
     const id = event.target.getAttribute("data-id");
     console.log(id);
- 
+
     const response = await fetch(`api/tables/${id}`, {
       method: "DELETE",
     });
@@ -112,15 +82,11 @@ const delButtonHandler = async (event) => {
     if (response.ok) {
       document.location.replace("/profile");
     } else {
-      alert("Failed to delete project");
+      alert("Failed to delete recipe");
     }
   }
 };
 
-// document
-//   .querySelector('.new-recipe-form')
-//   .addEventListener('submit', newFormHandler);
-
 document
-  .querySelector('.recipe-list')
-  .addEventListener('click', delButtonHandler);
+  .querySelector(".recipe-list")
+  .addEventListener("click", delButtonHandler);

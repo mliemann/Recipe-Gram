@@ -1,14 +1,18 @@
+/* eslint-disable no-empty */
+/* eslint-disable no-unused-vars */
+/* eslint-disable vars-on-top */
 const router = require('express').Router();
 const { Table, User } = require('../models');
 const withAuth = require('../utils/auth');
-const {Op} = require("sequelize");
+var Sequelize = require('sequelize');
+var Op = Sequelize.Op;
 
 router.get('/', async (req, res) => {
   try {
     console.log(req.session);
-    var user_id = 0;
+    // var user_id;
     if (req.session && req.session.logged_in) {
-      user_id = req.session.user_id
+      // user_id = req.session.user_id
     }
     // Get all projects and JOIN with user data
     const tableData = await Table.findAll({
@@ -20,9 +24,6 @@ router.get('/', async (req, res) => {
       ],
       where: {
         visibility: true,
-         [Op.or]: [
-           { id: user_id }
-         ]
        }
     });
 
@@ -38,6 +39,8 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
 
 router.get('/recipe/:id', async (req, res) => {
   try {
@@ -91,7 +94,7 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-//Still working on getting this to go to the signup page
+// Still working on getting this to go to the signup page
 router.get('/signup', (req, res) => {
 
   if (req.session.logged_in) {
@@ -101,5 +104,69 @@ router.get('/signup', (req, res) => {
 
   res.render('signup');
 });
+
+
+router.get("/filtered/:id", async (req, res) => {
+  try {
+    // Get all projects and JOIN with user data
+    const filterData = await Table.findAll({
+      where: {
+        visibility: true,
+        category_id: {
+          [Op.in]: req.params.id.split(",")
+        }
+      },
+      include: [
+        {
+          model: User,
+          attributes: ['user_name'],
+        },
+      ]
+    });
+
+    // Serialize data so the template can read it
+    const filters = filterData.map((filter) => filter.get({ plain: true }));
+
+    // Pass serialized data and session flag into template
+    res.render("filtered", {
+      filters,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/private', async (req, res) => {
+  try {
+    console.log(req.session);
+    if (req.session && req.session.logged_in) {
+    }
+    // Get all projects and JOIN with user data
+    const secretData = await Table.findAll({
+      include: [
+        {
+          model: User,
+          attributes: ['user_name'],
+        },
+      ],
+      where: {
+        visibility: false,
+        user_id: req.session.user_id
+       }
+    });
+
+    const secrets = secretData.map((secret) => secret.get({ plain: true }));
+
+    res.render('private', { 
+      secrets, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
 
 module.exports = router;

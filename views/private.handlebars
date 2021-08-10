@@ -1,0 +1,25 @@
+<!-- Loop over each object in the projects array -->
+ {{#if secrets.length}}
+    <div class="col-md-6 recipe-list" style="max-width: 100%;">
+      <h3 style = "font-family: Georgia, 'Times New Roman', Times, serif;">Secret Recipes:</h3>
+
+      {{#each secrets as |secret|}}
+  <div class="card mb-3" style="min-width: 100%;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src={{secret.url}} class="img-fluid rounded-start" alt="recipe image">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title" style = "font-family: Georgia, 'Times New Roman', Times, serif;" ><a href="/recipe/{{secret.id}}">{{secret.recipe_name}}</a></h5>
+        <p style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="card-text">{{secret.description}}</p>
+        <p style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="card-text"><small class="text-muted">Uploaded by {{secret.user.user_name}}</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+      {{/each}}
+    
+  {{/if}}
+</div>

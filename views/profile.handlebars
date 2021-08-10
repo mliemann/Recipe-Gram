@@ -1,18 +1,18 @@
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome, {{user_name}}!</h2>
+    <h2 style = "font-family: Georgia, 'Times New Roman', Times, serif;">Welcome, {{user_name}}!</h2>
   </div>
 </div>
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Enter new Recipe:</h3>
+    <h3 style = "font-family: Georgia, 'Times New Roman', Times, serif;">Create new recipe:</h3>
 
     <form class="form new-recipe-form">
       <div class="form-group">
-        <label for="recipe-name">recipe name:</label>
+        <label style = "font-family: Georgia, 'Times New Roman', Times, serif;" for="recipe-name">Recipe name:</label>
         <input
-          class="form-input"
+          class="form-input form-control"
           type="text"
           id="recipe-name"
           name="recipe-name"
@@ -20,91 +20,101 @@
       </div>
       <div class="form-group">
         <fieldset class="large-5 cell recipe-category">
-          <legend>What category:</legend>
+         <legend style = "font-family: Georgia, 'Times New Roman', Times, serif;">Select a category:</legend>
           <input
             type="radio"
             name="Category"
             value="1"
             id="breakfastfood"
             required
-          /><label for="americanfood">Breakfast Food</label>
+          /><label style ="font-family: Georgia, 'Times New Roman', Times, serif;" class="mr-1" for="breakfast">Breakfast</label>
           <input
             type="radio"
             name="Category"
             value="2"
             id="lunchfood"
-          /><label for="asianfood">Lunch Food</label>
+          /><label style ="font-family: Georgia, 'Times New Roman', Times, serif;" class="mr-1" for="lunch">Lunch</label>
           <input
             type="radio"
             name="Category"
             value="3"
             id="dinnerfood"
-          /><label for="eufood">Dinner Food</label>
+          /><label style ="font-family: Georgia, 'Times New Roman', Times, serif;" class="mr-1" for="dinner">Dinner</label>
+          <input
+            type="radio"
+            name="Category"
+            value="3"
+            id="dessertfood"
+          /><label style ="font-family: Georgia, 'Times New Roman', Times, serif;" class="mr-1" for="dessert">Dessert</label>
+          <input
+            type="radio"
+            name="Category"
+            value="3"
+            id="snackfood"
+          /><label style ="font-family: Georgia, 'Times New Roman', Times, serif;" class="mr-1" for="snack">Snack</label>
         </fieldset>
       </div>
             <div class="form-group">
         <fieldset class="large-5 cell recipe-visibility">
-          <legend>Select one:</legend>
+          <legend style ="font-family: Georgia, 'Times New Roman', Times, serif;">Select one:</legend>
           <input
             type="radio"
             name="visibility"
             value= "1"
             id="public"
-          /><label for="americanfood">Public</label>
+          /><label style ="font-family: Georgia, 'Times New Roman', Times, serif;" for="public">Public</label>
           <input
             type="radio"
             name="visibility"
             value="0"
             id="private"
-          /><label for="asianfood">Private</label>
+          /><label style ="font-family: Georgia, 'Times New Roman', Times, serif;" for="private">Private</label>
         </fieldset>
       </div>
       <div class="form-group">
-        <label for="recipe-desc">description:</label>
+        <label style ="font-family: Georgia, 'Times New Roman', Times, serif;" for="recipe-desc">Description:</label>
         <textarea
-          class="form-input"
+          class="form-input form-control"
           id="recipe-desc"
           name="recipe-desc"
         ></textarea>
       </div>
       <div class="form-group">
-        <label for="recipe-ingredients">ingredients:</label>
+        <label style = "font-family: Georgia, 'Times New Roman', Times, serif;" for="recipe-ingredients">Ingredients:</label>
         <textarea
-          class="form-input"
+          class="form-input form-control"
           id="recipe-ingredients"
           name="recipe-ingredients"
         ></textarea>
       </div>
       <div class="form-group">
-        <label for="recipe-directions">directions:</label>
+        <label style = "font-family: Georgia, 'Times New Roman', Times, serif;" for="recipe-directions">Directions:</label>
         <textarea
-          class="form-input"
+          class="form-input form-control"
           id="recipe-directions"
           name="recipe-directions"
         ></textarea>
       </div>
-      {{!-- <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div> --}}
     </form>
-        <form id="imageForm">
-      <input id="imageInput" type="file" accept="image/*" />
-      <button type="submit" class="btn btn-primary">Create</button>
+        <form style = "font-family: Georgia, 'Times New Roman', Times, serif;" id="imageForm">
+      <input style = "font-family: Georgia, 'Times New Roman', Times, serif;" id="imageInput" type="file" accept="image/*" />
+      <button style = "font-family: Georgia, 'Times New Roman', Times, serif;" type="submit" class="btn btn-primary">Create</button>
     </form>
 
   </div>
 
   {{#if tables.length}}
     <div class="col-md-6 recipe-list">
-      <h3>Current Projects:</h3>
+      <h3 style = "font-family: Georgia, 'Times New Roman', Times, serif;">Your recipes:</h3>
 
       {{#each tables as |table|}}
         <div class="row mb-2">
-          <div class="col-md-8">
+          <div style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="col-md-8">
             <h4><a href="/recipe/{{table.id}}">{{table.recipe_name}}</a></h4>
           </div>
           <div class="col-md-4">
             <button
+            style = "font-family: Georgia, 'Times New Roman', Times, serif;"
               class="btn btn-sm btn-danger"
               data-id= "{{table.id}}"
             >DELETE</button>
@@ -115,5 +125,4 @@
   {{/if}}
 </div>
 
-<script src="/js/index.js"></script>
-<script src="./js/profile.js"></script>
+<script src="/js/profile.js"></script>

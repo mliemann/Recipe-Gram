@@ -1,10 +1,10 @@
 [
   {
-    "recipe_name": "French toast",
+    "recipe_name": "French Toast",
     "visibility": true,
     "ingredients": "1 teaspoon ground cinnamon, 1/4 teaspoon ground nutmeg, 2 tablespoons sugar, 4 tablespoons butter, 4 eggs, 1/4 cup milk, 1/2 teaspoon vanilla extract, 8 slices challah, brioche, or white bread, 1/2 cup maple syrup, warmed. In a small bowl, combine cinnamon, nutmeg, and sugar and set aside briefly.",
-    "directions": "In a 10-inch or 12-inch skillet, melt butter over medium heat. Whisk together cinnamon mixture, eggs, milk, and vanilla and pour into a shallow container such as a pie plate. Dip bread in egg mixture. Fry slices until golden brown, then flip to cook the other side. Serve with syrup.", 
-    "description": "most delicious simple french toast",
+    "directions": "In a 10-inch or 12-inch skillet, melt butter over medium heat. Whisk together cinnamon mixture, eggs, milk, and vanilla and pour into a shallow container such as a pie plate. Dip bread in egg mixture. Fry slices until golden brown, then flip to cook the other side. Serve with syrup.",
+    "description": "Most delicious simple french toast",
     "user_id": 1,
     "category_id": 1,
     "url": "https://www.thespruceeats.com/thmb/tyiqLQA0V81tfRUOz9nkXPrybec=/2696x2696/smart/filters:no_upscale()/french-toast-481660-Hero-1-69d27bf922084a5a9b9b7fb680b082b2.jpg"
@@ -13,70 +13,190 @@
     "recipe_name": "Grilled Cheese",
     "visibility": true,
     "ingredients": "2 ounces sliced melting cheese (about 2 slices), such as American, Cheddar, muenster, Havarti, Swiss, fontina, Mozzarella, Monterey jack, pepper jack, provolone, 2 slices bread, such as white, rye, brioche, sourdough, potato, whole wheat, pumpernickel, 1 tablespoon fat, such as mayonnaise, butter or olive, chili or coconut oil.",
-    "directions": "Oven method (great for a crowd of six or fewer): Put a rimmed baking sheet on the middle rack of the oven and preheat to 450 degrees F. Make one sandwich per person: Sandwich 2 slices of cheese between 2 slices of bread. Spread or brush the outside of the sandwich with 1 tablespoon of fat. Place on the preheated baking sheet and cook until the cheese starts to melt, about 5 minutes. Flip the sandwich and bake until golden brown, an additional 5 minutes.", 
-    "description": "gooey grilled cheese",
+    "directions": "Oven method (great for a crowd of six or fewer): Put a rimmed baking sheet on the middle rack of the oven and preheat to 450 degrees F. Make one sandwich per person: Sandwich 2 slices of cheese between 2 slices of bread. Spread or brush the outside of the sandwich with 1 tablespoon of fat. Place on the preheated baking sheet and cook until the cheese starts to melt, about 5 minutes. Flip the sandwich and bake until golden brown, an additional 5 minutes.",
+    "description": "Gooey grilled cheese",
     "user_id": 2,
     "category_id": 2,
     "url": "https://fromscratchfast.com/wp-content/uploads/2019/09/Oven-Grilled-Cheese-1-500x500.jpg"
   },
   {
     "recipe_name": "Pizza",
-    "visibility": false,
+    "visibility": true,
     "ingredients": "2 tablespoons sugar, 1 tablespoon kosher salt, 1 tablespoon pure olive oil, 1 tablespoon pure olive oil, 3/4 cup warm water, 2 cups bread flour (for bread machines), 1 teaspoon instant yeast, 2 teaspoons olive oil, Olive oil, for the pizza crust, Flour, for dusting the pizza peel. 1 1/2 ounces pizza sauce,  1/2 teaspoon each chopped fresh herbs such as thyme, oregano, red pepper flakes, A combination of 3 grated cheeses such as mozzarella, Monterey Jack, and provolone.",
-    "directions": "Place the sugar, salt, olive oil, water, 1 cup of flour, yeast, and remaining cup of flour into a standing mixer's work bowl. Using the paddle attachment, start the mixer on low and mix until the dough just comes together, forming a ball. Lube the hook attachment with cooking spray. Attach the hook to the mixer and knead for 15 minutes on medium speed, Tear off a small piece of dough and flatten into a disc. Stretch the dough until thin. Hold it up to the light and look to see if the baker's windowpane, or taut membrane, has formed. If the dough tears before it forms, knead the dough for an additional 5 to 10 minutes. Roll the pizza dough into a smooth ball on the countertop. Place into a stainless steel or glass bowl. Add 2 teaspoons of olive oil to the bowl and toss to coat. Cover with plastic wrap and refrigerate for 18 to 24 hours.Place the pizza stone or tile onto the bottom of a cold oven and turn the oven to its highest temperature, about 500 degrees F. If the oven has coils on the oven floor, place the tile onto the lowest rack of the oven. Split the pizza dough into 2 equal parts using a knife or a dough scraper. Flatten into a disk onto the countertop and then fold the dough into a ball. Wet hands barely with water and rub them onto the countertop to dampen the surface. Roll the dough on the surface until it tightens. Cover one ball with a tea towel and rest for 30 minutes. Repeat the steps with the other piece of dough. If not baking the remaining pizza immediately, spray the inside of a ziptop bag with cooking spray and place the dough ball into the bag. Refrigerate for up to 6 days. Sprinkle the flour onto the peel and place the dough onto the peel. Using your hands, form a lip around the edges of the pizza. Stretch the dough into a round disc, rotating after each stretch. Toss the dough in the air if you dare. Shake the pizza on the peel to be sure that it will slide onto the pizza stone or tile. (Dress and bake the pizza immediately for a crisp crust or rest the dough for 30 minutes if you want a chewy texture.) Brush the rim of the pizza with olive oil. Spread the pizza sauce evenly onto the pizza. Sprinkle the herbs onto the pizza and top with the cheese. Slide the pizza onto the tile and bake for 7 minutes, or until bubbly and golden brown. Rest for 3 minutes before slicing.", 
-    "description": "delicious pizza",
+    "directions": "Place the sugar, salt, olive oil, water, 1 cup of flour, yeast, and remaining cup of flour into a standing mixer's work bowl. Using the paddle attachment, start the mixer on low and mix until the dough just comes together, forming a ball. Lube the hook attachment with cooking spray. Attach the hook to the mixer and knead for 15 minutes on medium speed, Tear off a small piece of dough and flatten into a disc. Stretch the dough until thin. Hold it up to the light and look to see if the baker's windowpane, or taut membrane, has formed. If the dough tears before it forms, knead the dough for an additional 5 to 10 minutes. Roll the pizza dough into a smooth ball on the countertop. Place into a stainless steel or glass bowl. Add 2 teaspoons of olive oil to the bowl and toss to coat. Cover with plastic wrap and refrigerate for 18 to 24 hours.Place the pizza stone or tile onto the bottom of a cold oven and turn the oven to its highest temperature, about 500 degrees F. If the oven has coils on the oven floor, place the tile onto the lowest rack of the oven. Split the pizza dough into 2 equal parts using a knife or a dough scraper. Flatten into a disk onto the countertop and then fold the dough into a ball. Wet hands barely with water and rub them onto the countertop to dampen the surface. Roll the dough on the surface until it tightens. Cover one ball with a tea towel and rest for 30 minutes. Repeat the steps with the other piece of dough. If not baking the remaining pizza immediately, spray the inside of a ziptop bag with cooking spray and place the dough ball into the bag. Refrigerate for up to 6 days. Sprinkle the flour onto the peel and place the dough onto the peel. Using your hands, form a lip around the edges of the pizza. Stretch the dough into a round disc, rotating after each stretch. Toss the dough in the air if you dare. Shake the pizza on the peel to be sure that it will slide onto the pizza stone or tile. (Dress and bake the pizza immediately for a crisp crust or rest the dough for 30 minutes if you want a chewy texture.) Brush the rim of the pizza with olive oil. Spread the pizza sauce evenly onto the pizza. Sprinkle the herbs onto the pizza and top with the cheese. Slide the pizza onto the tile and bake for 7 minutes, or until bubbly and golden brown. Rest for 3 minutes before slicing.",
+    "description": "Delicious pizza",
     "user_id": 3,
     "category_id": 3,
     "url": "https://giadzy.com/wp-content/uploads/2020/07/IMG_2893.jpg"
   },
   {
     "recipe_name": "Apricot Glazed Chicken Breasts",
-    "visibility": false,
+    "visibility": true,
     "ingredients": "3 tablespoons apricot preserves, 1 teaspoon fresh ginger paste, ½ teaspoon minced fresh rosemary, 2 (8 ounce) boneless, skinless chicken breasts, 1 teaspoon vegetable oil, salt and ground black pepper to taste.",
     "directions": "Stir apricot preserves, ginger paste, and rosemary together in a small bowl. Microwave for about 20 seconds to make preserves easier to spread. Pound chicken breasts to uniform thickness and pat dry with a paper towel. Rub with oil and season with salt and pepper. Preheat the air fryer to 400 degrees F (200 degrees C). Spray the basket with cooking spray and add chicken breasts in a single layer. Air fry for 4 minutes. Flip and rotate the position of the chicken breasts. Brush with the apricot mixture. Return basket to the air fryer and cook until chicken is no longer pink in the center and the juices run clear, 8 to 12 minutes. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C). Transfer chicken to a plate, cover loosely with aluminum foil, and let sit for 5 minutes. Cut chicken breasts into slices and serve.",
-    "description": "exquisite chicken breast",
+    "description": "Exquisite chicken breast",
     "user_id": 2,
     "category_id": 2,
     "url": "https://images-gmi-pmc.edge-generalmills.com/5069d42a-d26f-4906-9eaf-7122a27d7900.jpg"
   },
   {
     "recipe_name": "Easy Meatloaf",
-    "visibility": false,
+    "visibility": true,
     "ingredients": "1 ½ pounds ground beef, 1 egg, 1 onion, chopped, 1 cup milk, 1 cup dried bread crumbs, salt and pepper to taste, 2 tablespoons brown sugar, 2 tablespoons prepared mustard, ⅓ cup ketchup",
     "directions": "Preheat oven to 350 degrees F (175 degrees C). In a large bowl, combine the beef, egg, onion, milk and bread OR cracker crumbs. Season with salt and pepper to taste and place in a lightly greased 9x5-inch loaf pan, or form into a loaf and place in a lightly greased 9x13-inch baking dish. In a separate small bowl, combine the brown sugar, mustard and ketchup. Mix well and pour over the meatloaf. Bake at 350 degrees F (175 degrees C) for 1 hour.",
-    "description": "excellent meatloaf",
+    "description": "Excellent meatloaf",
     "user_id": 3,
     "category_id": 1,
     "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2020%2F06%2F19%2FEasy-Meatloaf.jpg&q=85"
   },
   {
     "recipe_name": "Classic and Simple Meat Lasagna",
-    "visibility": false,
+    "visibility": true,
     "ingredients": "12 whole wheat lasagna noodles, 1 pound lean ground beef, 2 cloves garlic, chopped, ½ teaspoon garlic powder, 1 teaspoon dried oregano, or to taste, salt and ground black pepper to taste, 1 (16 ounce) package cottage cheese, 2 eggs, ½ cup shredded Parmesan cheese, 1 ½ (25 ounce) jars tomato-basil pasta sauce, 2 cups shredded mozzarella cheese",
     "directions": "Preheat oven to 350 degrees F (175 degrees C). Fill a large pot with lightly salted water and bring to a rolling boil over high heat. Once the water is boiling, add the lasagna noodles a few at a time, and return to a boil. Cook the pasta uncovered, stirring occasionally, until the pasta has cooked through, but is still firm to the bite, about 10 minutes. Remove the noodles to a plate. Place the ground beef into a skillet over medium heat, add the garlic, garlic powder, oregano, salt, and black pepper to the skillet. Cook the meat, chopping it into small chunks as it cooks, until no longer pink, about 10 minutes. Drain excess grease. In a bowl, mix the cottage cheese, eggs, and Parmesan cheese until thoroughly combined. Place 4 noodles side by side into the bottom of a 9x13-inch baking pan; top with a layer of the tomato-basil sauce, a layer of ground beef mixture, and a layer of the cottage cheese mixture. Repeat layers twice more, ending with a layer of sauce; sprinkle top with the mozzarella cheese. Cover the dish with aluminum foil. Bake in the preheated oven until the casserole is bubbling and the cheese has melted, about 30 minutes. Remove foil and bake until cheese has begun to brown, about 10 more minutes. Allow to stand at least 10 minutes before serving.",
-    "description": "easy classic lasagna",
+    "description": "Easy classic lasagna",
     "user_id": 1,
     "category_id": 2,
     "url": "https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=1896&h=948&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F994958.jpg"
   },
   {
     "recipe_name": "Bacon and Egg Tacos",
-    "visibility": false,
+    "visibility": true,
     "ingredients": "6 eggs, ¼ cup crumbled cooked bacon, 2 tablespoons butter, 3 slices American cheese, diced, ¼ teaspoon salt, ¼ teaspoon ground black pepper, 6 flour tortillas, 1 cup salsa (Optional)",
     "directions": "Whisk eggs together in a bowl; stir in bacon. Melt butter in a skillet over medium heat. Add egg mixture; cook and stir until eggs are completely set, 2 to 3 minutes. Stir in American cheese, salt, and pepper. Wrap tortillas in damp paper towels; microwave until warmed through, 30 seconds to 1 minute. Spoon 1/4 cup egg mixture into the center of each tortilla; fold sides to cover. Serve with salsa.",
-    "description": "simple tasty breakfast tacos",
+    "description": "Simple tasty breakfast tacos",
     "user_id": 2,
     "category_id": 3,
     "url": "https://images.media-allrecipes.com/userphotos/4484963.jpg"
   },
   {
     "recipe_name": "Basic Italian Bean Soup",
-    "visibility": false,
+    "visibility": true,
     "ingredients": "olive oil, 1 large onion, diced, 2 cloves garlic, or more to taste, 2 cups tomato sauce, 24 ounces prepared cannellini beans, 1 tablespoon dried basil, ½ teaspoon oregano, salt and ground black pepper to taste",
     "directions": "Heat olive oil in a pot over medium-high heat. Cook and stir onion in hot oil until tender, about 5 minutes; add garlic and continue cooking until fragrant, 1 to 2 minutes more. Pour tomato sauce into the pot; stir. Add cannelini beans, basil, oregano, salt, and pepper. Bring the mixture to a simmer, reduce heat to medium-low, and cook until the beans are hot, 5 to 7 minutes more.",
-    "description": "delicious bean soup",
-    "user_id": 3,
+    "description": "Delicious bean soup",
+    "user_id": 4,
     "category_id": 2,
     "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1938306.jpg"
+  },
+  {
+    "recipe_name": "Apple Pie",
+    "visibility": true,
+    "ingredients": "Pie dough for top and bottom 9-inch pie, chilled, 4 to 4 1/4 pounds baking apples (7 to 8 apples), 1/2 cup (100 grams) light or dark brown sugar, 1/2 cup (100 grams) granulated sugar, 1/4 teaspoon fine sea salt, 1 teaspoon ground cinnamon, 1/4 teaspoon ground ginger, 1/4 teaspoon ground cardamom, 1/4 teaspoon ground allspice, 1/4 teaspoon freshly grated nutmeg, 2 tablespoons cornstarch or use 4 tablespoons tapioca flour/starch, 1 tablespoon butter, 1 egg",
+    "directions": "MAKE APPLE FILLING: Peel, and then cut the apples in half. Remove the cores, and then slice apple halves into thin slices, about 1/4-inch thick. Place the apple slices into a very large bowl. Scatter both sugars, salt, and spices over the apples, and then use your hands to toss them, coating the apple slices as much as possible. Set aside for 1 hour at room temperature. PREPARE PIE CRUST: Roll out the first half of pie dough on a lightly-floured work surface. To prevent the dough from sticking and to ensure uniform thickness, roll from the center of the dough outwards and keep lifting up and turning the dough a quarter turn as you roll. Check for the correct size by inverting the pie dish over the dough. The dough should be about 1 1/2 to 2 inches larger than the dish. Being careful not to stretch it, place the dough into the pie dish, and then trim overhanging dough to within 3/4-inch of the edge of the dish. Refrigerate while you make the pie filling. Roll out the second half of dough to a similar size as before and transfer it to a large parchment-lined baking sheet. Keep this in the refrigerator until needed. PREPARE OVEN: Position an oven rack towards the center of the oven, and then heat the oven to 400 degrees Fahrenheit (200C). ASSEMBLE PIE: Toss cornstarch (or tapioca) with the apples. Transfer most (if not all) of the apples into the prepared bottom crust, using your hands to really pack them down into the pie. Fill the pie until apples are mounded at the same height as the edge of the pie crust. If you have too many apples, save them. Pour the juices that have accumulated at the bottom of the bowl over the apples. (If it looks like there’s more than 3/4 to 1 cup of liquid, you might want to leave some behind. Cut a tablespoon of butter into 8 or so small pieces and dot them over the pie. For a double crust pie, place the second pie dough round over the filling or cut it into strips and lattice the top. If you are not adding a lattice crust and instead are adding the top crust in one piece, use a sharp knife to cut a few slits in the top of the crust to allow steam to vent. Trim excess dough from the top crust or lattice strips, and then fold the overhang underneath itself, forming a thick rim. Press it together or crimp it with your fingers (or use a fork). Whisk the egg with a tablespoon of water, and then use as an egg wash by lightly brushing the top crust. This adds shine and helps the crust brown. BAKE PIE: Place the prepared pie onto a baking sheet lined with parchment paper (this can be the same lined baking sheet used for chilling the top crust). Bake the pie for about 75 minutes, turning a few times for even browning. If you notice that the pie crust is browning too quickly, mold a large piece of foil over a bowl that’s been placed upside down to make a foil dome. Place the foil dome over the pie for the remaining bake time. This will slow the browning. Apple pie is done when the juices are bubbling through the vents of the top crust or lattice. If you do not see bubbles, the pie needs more time. Another way to check for doneness is to use an internal thermometer. Pierce the pie in the middle then test the temperature. The pie is done when it reads 195 degrees Fahrenheit (90C). Piercing the pie is also a nice indication of how soft the apples are. If they feel too crunchy, the pie needs more time.",
+    "description": "Our Favorite Apple Pie",
+    "user_id": 4,
+    "category_id": 4,
+    "url": "https://www.inspiredtaste.net/wp-content/uploads/2019/10/Homemade-Apple-Pie-Recipe-9-1200.jpg"
+  },
+  {
+    "recipe_name": "Slow Cooker Pot Roast",
+    "visibility": true,
+    "ingredients": "1 tablespoon olive oil, 4 pounds (2 kg) chuck roast or blade roast, boneless and trimmed of excess fat, 2 yellow onions chopped, 8 cloves garlic smashed with the back of a spoon (or 2 tablespoons minced garlic), 1 pound (500 grams) baby potatoes, white or Yukon gold, (you may need to halve them if they are too large), 4 large carrots, cut into 2-inch pieces, 2 stalks celery, cut into 1-inch pieces, 1/4 cup balsamic vinegar, 2 tablespoons Dijon mustard, 1 tablespoon brown sugar, 2 teaspoons dried thyme, 2 teaspoons crushed bouillon, 1 teaspoon salt, or to taste, 1/2 teaspoon freshly ground black pepper, or to taste, 1 cup reduced-sodium beef broth, 2 tablespoons plain flour (optional -- for a thick gravy), 2 tablespoons fresh chopped parsley, to serve",
+    "directions": "Heat oil in a large skillet or pan over high heat. Season roast with a good amount of salt and pepper. Sear on all sides until browned (about 5-6 minutes each side). Transfer roast to the bowl of a 6-quart slow cooker. Add the onions, garlic, potatoes, carrots, celery, balsamic, mustard, brown sugar, thyme and bouillon. Season with salt and pepper to taste. Mix the stock together with the flour and pour into the slow cooker bowl (don't worry about any lumps, they will cook out).  Cook on low setting for 8 hours, or until meat is tender and falling apart and the vegetables are soft. Taste test and add any extra balsamic vinegar, brown sugar, salt or pepper, if needed. Slice meat, garnish with parsley and drizzle with gravy.",
+    "description": "Slow Cooker Pot Roast",
+    "user_id": 3,
+    "category_id": 3,
+    "url": "https://cafedelites.com/wp-content/uploads/2017/10/Pot-Roast-IMAGE-31.jpg"
+  },
+  {
+    "recipe_name": "Spanish Omelette",
+    "visibility": false,
+    "ingredients": "1 onion, thinly sliced, 3 potatoes, thinly sliced, 2 cups olive oil, 6 eggs, 1 pinch salt",
+    "directions": "Heat up the olive oil in a really hot pan. Thinly slice the onion. Slice the potatoes into 3-millimeters thick pieces. Fry the vegetables in the olive oil over high heat for 10-15 minutes until they caramelize. Drain the vegetables and save the olive oil for later use. Add 6 eggs to a bowl and whisk. Add the fried vegetables, stir, and leave to set for 15-20 minutes. In a nonstick pan, fry the egg mixture over high heat for 1 minute, then reduce to a low heat for 2-4 minutes. Cover the pan with a large plate and carefully turn the omelet out onto the plate. Slide the omelet back into the pan and fry for a further 3-5 minutes over low heat. To check the omelet is cooked, gently press on the center of the omelet. If the surface springs back, it is ready. Repeat step 8 to remove omelet from the pan. Enjoy!",
+    "description": "Traditional Spanish Omelette",
+    "user_id": 1,
+    "category_id": 1,
+    "url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/e8c2db86eaf346b0aa0d3dcffd47c97f/Top-12-Comfort-Food-Cut-2.jpg?output-format=webp&output-quality=auto"
+  },
+  {
+    "recipe_name": "Potato Chips",
+    "visibility": false,
+    "ingredients": "1 tablespoon vegetable oil, 1 potato, sliced paper thin (peel optional), ½ teaspoon salt, or to taste",
+    "directions": "Pour the vegetable oil into a plastic bag (a produce bag works well). Add the potato slices, and shake to coat. Coat a large dinner plate lightly with oil or cooking spray. Arrange potato slices in a single layer on the dish. Cook in the microwave for 3 to 5 minutes, or until lightly browned (if not browned, they will not become crisp). Times will vary depending on the power of your microwave. Remove chips from plate, and toss with salt (or other seasonings). Let cool. Repeat process with the remaining potato slices. You will not need to keep oiling the plate.",
+    "description": "Homemade Potato Chips",
+    "user_id": 2,
+    "category_id": 5,
+    "url": "https://assets.epicurious.com/photos/5761cc618accf290434553a5/master/pass/my-homemade-potato-chips.jpg"
+  },
+  {
+    "recipe_name": "Homemade Hummus",
+    "visibility": true,
+    "ingredients": "1 (15 ounce) can garbanzo beans, drained, liquid reserved, 1 clove garlic, crushed, 2 teaspoons ground cumin, ½ teaspoon salt, 1 tablespoon olive oil",
+    "directions": "In a blender or food processor combine garbanzo beans, garlic, cumin, salt and olive oil. Blend on low speed, gradually adding reserved bean liquid, until desired consistency is achieved.",
+    "description": "Extra Easy Hummus",
+    "user_id": 4,
+    "category_id": 5,
+    "url": "https://www.quick-german-recipes.com/images/easy-hummus-recipe-1-edit.jpg"
+  },
+  {
+    "recipe_name": "Strawberry-Rhubarb Buckle",
+    "visibility": true,
+    "ingredients": "Strawberry-Rhubarb Filling: 1 ½ cups diced fresh rhubarb, 1 ½ cups diced fresh strawberries, ½ cup white sugar, 1 tablespoon lemon juice, 3 tablespoons water, divided, 2 tablespoons cornstarch.  Cake Batter: cooking spray, ½ cup butter, softened, ½ cup white sugar, 1 large egg, 1 teaspoon vanilla extract, ½ cup plain yogurt, 1 ½ cups all-purpose flour, ½ teaspoon baking soda, ½ teaspoon baking powder, ½ teaspoon salt.  Topping: 3 tablespoons brown sugar, ¼ cup flour, 2 tablespoons butter",
+    "directions": "Combine rhubarb, strawberries, 1/2 cup sugar, lemon juice and 1 tablespoon of water in a saucepan. Cook, covered, over medium-low heat, stirring occasionally until mixture begins to boil, about 5 minutes. Reduce heat to low.  In a small bowl, stir together remaining 2 tablespoons of water with cornstarch until cornstarch is dissolved. Add mixture to the saucepan and continue cooking fruit until mixture begins to thicken, about 2 minutes. Remove from stove and set aside to cool. Preheat the oven to 350 degrees F (175 degrees C). Spray a 9-inch deep dish pie pan with non-stick cooking spray, and place on a baking sheet.  Beat 1/2 cup of butter and 1/2 cup of sugar with an electric mixer in a bowl until light and fluffy. Beat in egg, vanilla extract, and yogurt. Add flour, baking powder, baking soda, and salt; mix until just combined. Spread 2/3 of the batter into the prepared pan. Pour strawberry-rhubarb filling on top of the batter. Spread remaining 1/3 of the batter in small mounds atop the filling. Set aside.  Combine brown sugar, 1/4 cup flour, and 2 tablespoons of butter in a small bowl. Mix using a fork, a pastry blender, or your hands, until the mixture resembles coarse crumbs. Sprinkle on top of the batter and filling.  Bake in the preheated oven until the cake topping is nicely browned, about 35 minutes.",
+    "description": "Strawberry-Rhubarb Buckle",
+    "user_id": 3,
+    "category_id": 4,
+    "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F6614329.jpg&w=596&h=596&c=sc&poi=face&q=85"
+  },
+  {
+    "recipe_name": "Peanut Butter Pie",
+    "visibility": false,
+    "ingredients": "1 ¼ cups chocolate cookie crumbs, ¼ cup white sugar, ¼ cup butter, 1 (8 ounce) package cream cheese, softened, 1 cup creamy peanut butter, 1 cup white sugar, 1 tablespoon unsalted butter, softened,1 teaspoon vanilla extract, 1 cup heavy whipping cream",
+    "directions": "Preheat oven to 375 degrees F (190 degrees C).  Combine 1 1/4 cup cookie crumbs, 1/4 cup sugar, and 1/4 cup butter; press into a 9-inch pie plate. Bake in preheated oven for 10 minutes. Cool on wire rack.  In a mixing bowl, beat cream cheese, peanut butter, 1 cup sugar, 1 tablespoon butter, and vanilla until smooth. Whip the cream, and fold into the peanut butter mixture.  Gently spoon filing into crust. Garnish pie with chocolate or cookie crumbs if desired. Refrigerate for several hours before serving.",
+    "description": "Peanut Butter Pie",
+    "user_id": 4,
+    "category_id": 4,
+    "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5766848.jpg&w=426&h=285&c=sc&poi=face&q=85"
+  },
+  {
+    "recipe_name": "Banh Mi",
+    "visibility": true,
+    "ingredients": "½ cup rice vinegar, ¼ cup water, ¼ cup white sugar, ¼ cup carrot, cut into 1/16-inch-thick matchsticks, ¼ cup white (daikon) radish, cut into 1/16-inch-thick matchsticks, ¼ cup thinly sliced white onion, 1 skinless, boneless chicken breast half, garlic salt to taste, ground black pepper to taste, 1 (12 inch) French baguette, 4 tablespoons mayonnaise, ¼ cup thinly sliced cucumber, 1 tablespoon fresh cilantro leaves, 1 small jalapeno pepper - seeded and cut into 1/16-inch-thick matchsticks, 1 wedge lime",
+    "directions": "Place rice vinegar, water, and sugar into a saucepan over medium heat, bring to a boil, and stir until the sugar has dissolved, about 1 minute. Allow the mixture to cool.  Pour the cooled vinegar mixture over the carrot, radish, and onion in a bowl, and allow to stand for at least 30 minutes. Drain off the excess vinegar mixture after the vegetables have marinated.  While the vegetables are marinating, preheat the oven's broiler, and set the oven rack about 6 inches from the heat source. Lightly oil a slotted broiler pan.  Sprinkle the chicken breast with garlic salt and pepper, and broil on slotted broiler pan, turning once, until the center of the chicken breast is no longer pink and the surface has browned, about 6 minutes per side. Remove the broiled chicken, and slice into bite-size pieces.  Slice the baguette in half the long way, and pull the center of the bread out of the baguette halves, leaving a cavity for the filling. Place the baguette halves under the broiler to lightly toast, 2 to 3 minutes.  To assemble the bahn mi sandwich, spread each half of the toasted baguette with mayonnaise, and fill the cavity of the bottom half of the bread with broiled chicken, cucumber slices, pickled carrot, onion, and radish, cilantro leaves, and jalapeno pepper. Squeeze a wedge of lime over the filling, and top with the other half of the baguette.",
+    "description": "Banh Mi",
+    "user_id": 1,
+    "category_id": 2,
+    "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1039590.jpg&w=272&h=272&c=sc&poi=face&q=85"
+  },
+  {
+    "recipe_name": "Reuben Sandwich",
+    "visibility": false,
+    "ingredients": "2 tablespoons butter, 8 slices rye bread, 8 slices deli sliced corned beef, 8 slices Swiss cheese, 1 cup sauerkraut, drained, ½ cup Thousand Island dressing",
+    "directions": "Preheat a large skillet or griddle on medium heat. Lightly butter one side of bread slices. Spread non-buttered sides with Thousand Island dressing. On 4 bread slices, layer 1 slice Swiss cheese, 2 slices corned beef, 1/4 cup sauerkraut and second slice of Swiss cheese. Top with remaining bread slices, buttered sides out. Grill sandwiches until both sides are golden brown, about 5 minutes per side. Serve hot.",
+    "description": "Reuben Sandwich",
+    "user_id": 3,
+    "category_id": 2,
+    "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1340290.jpg&w=272&h=272&c=sc&poi=face&q=85"
+  },
+  {
+    "recipe_name": "Paleo Pecan-Maple Salmon",
+    "visibility": true,
+    "ingredients": "4 (4 ounce) fillets salmon, salt and ground black pepper to taste, ½ cup pecans, 3 tablespoons pure maple syrup, 1 tablespoon apple cider vinegar, 1 teaspoon smoked paprika, ½ teaspoon chipotle pepper powder, ½ teaspoon onion powder",
+    "directions": "Place salmon fillets on a baking sheet and season with salt and black pepper. Combine pecans, maple syrup, vinegar, paprika, chipotle powder, and onion powder in a food processor; pulse until texture is crumbly. Spoon pecan mixture on top of each salmon fillet, coating the entire top surface. Refrigerate coated salmon, uncovered, for 2 to 3 hours. Preheat oven to 425 degrees F (220 degrees C). Bake salmon in the preheated oven until fish flakes easily with a fork, 12 to 14 minutes.",
+    "description": "Paleo Pecan-Maple Salmon",
+    "user_id": 2,
+    "category_id": 3,
+    "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2410943.jpg&w=426&h=285&c=sc&poi=face&q=85"
+  },
+  {
+    "recipe_name": "Arepas",
+    "visibility": true,
+    "ingredients": "Stir water and salt together in a bowl. Gradually stir corn meal into water with your fingers until mixture forms a soft, moist, malleable dough. Step 2 Divide dough into 8 golf ball-size balls and pat each one into a patty about 3/8-inch thick. Step 3 Heat oil in a skillet over medium heat until shimmering. Working in batches, cook corn patties in hot oil until golden brown, 4 to 5 minutes per side. Transfer cooked arepas to a paper towel-lined plate to drain until cool enough to handle. Step 4 Slice halfway through each cake horizontally with a thin serrated knife to form a pita-like pocket.",
+    "directions": "Place salmon fillets on a baking sheet and season with salt and black pepper. Combine pecans, maple syrup, vinegar, paprika, chipotle powder, and onion powder in a food processor; pulse until texture is crumbly. Spoon pecan mixture on top of each salmon fillet, coating the entire top surface. Refrigerate coated salmon, uncovered, for 2 to 3 hours. Preheat oven to 425 degrees F (220 degrees C). Bake salmon in the preheated oven until fish flakes easily with a fork, 12 to 14 minutes.",
+    "description": "Arepas",
+    "user_id": 2,
+    "category_id": 3,
+    "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2472198.jpg&w=596&h=792&c=sc&poi=face&q=85"
+  },
+  {
+    "recipe_name": "Challah",
+    "visibility": true,
+    "ingredients": "¼ cup white sugar, 1 tablespoon salt,¼ cup vegetable oil,1 ¼ cups warm water,2 (.25 ounce) packages active dry yeast,3 eggs,6 cups all-purpose flour,1 egg,1 tablespoon poppy seeds (Optional)",
+    "directions": "Step 1 Place sugar, salt, and oil in either a mixing bowl for an electric mixer with a dough hook or any large bowl. Add hot water, and stir to dissolve the sugar and salt. Stir in yeast, and let stand until mixture gets foamy. Add slightly beaten eggs. Step 2If using an electric mixer, add 4 1/2 cups of flour to the yeast mixture. Mix until flour is mixed in, and dough gets stringy. This stringiness indicates that the gluten has developed. Continue to add flour until dough is all on dough hook; 1 or 2 cups is usually sufficient. Let hook continue to knead for several minutes. Dough should be smooth and elastic. To knead by hand, stir 4 1/2 cups of flour in to the yeast mixture. Turn soft dough onto lightly floured surface, and work in 1 to 2 cups of flour. Knead until smooth and elastic, about 8 to 10 minutes.Step 3 Place dough into a greased bowl, and turn several times to coat the surface. Cover bowl with a damp cloth. Let dough rise until doubled in bulk. Punch down after first rising, and allow to rise a second time. The first rising is about 1 hour, the second about 45 minutes. Two risings makes for a better bread, but if time is a problem just do one. Step 4Divide dough in half, and divide each half into three or four equal parts. Make two braids, and place both breads on a greased baking sheet. Cover, and allow to rise until doubled. Brush with beaten egg. Sprinkle with poppy seeds, if desired. Step 5Bake at 350 degrees F (175 degrees C) for 35 minutes until golden brown. Allow loaves to cool on a wire rack.",
+    "description": "Challah",
+    "user_id": 1,
+    "category_id": 2,
+    "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F6965103.jpg&w=596&h=596&c=sc&poi=face&q=85"
   }
 ]
