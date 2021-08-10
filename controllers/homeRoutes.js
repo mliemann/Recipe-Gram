@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable vars-on-top */
 const router = require('express').Router();
-const { Table, User } = require('../models');
+const { Table, User, Like } = require('../models');
 const withAuth = require('../utils/auth');
 var Sequelize = require('sequelize');
 var Op = Sequelize.Op;
@@ -55,9 +55,16 @@ router.get('/recipe/:id', async (req, res) => {
 
     const table = tableData.get({ plain: true });
 
+    const likeCount = await Like.count({
+      where: {
+        recipe_id: req.params.id,
+      }
+    })
+
     res.render('recipe', {
       ...table,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in,
+      total_likes: likeCount,
     });
   } catch (err) {
     res.status(500).json(err);

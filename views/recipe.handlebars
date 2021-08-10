@@ -14,8 +14,13 @@
 <div class="card mx-auto"style="width: 40rem;">
   <img class="card-img-top" src= {{url}} alt="recipe image" style="width:auto;height:auto;">
   <div class="card-body">
+    <div style = "font-family: Georgia, 'Times New Roman', Times, serif; width: 15%" class = "position-absolute top-0 start-0 border border-light rounded">
+      <button onclick = "OnLikeRecipe({{id}})" class="btn btn-info btn-sm">Like</button>
+      <span id = "num-likes">{{total_likes}}</span>
+    </div>
     <h5 style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="card-title text-center">{{recipe_name}}</h5>
     <p style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="card-text text-center">{{description}}</p>
+    
   </div>
   <ul class="list-group list-group-flush">
     <li style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="list-group-item text-center">{{ingredients}}</li>
