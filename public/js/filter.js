@@ -1,9 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable no-undef */
-/* eslint-disable linebreak-style */
-/* eslint-disable no-unused-expressions */
-/* eslint-disable func-names */
-
 var favorite = [];
 
 $(document).ready(() => {
