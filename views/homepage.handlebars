@@ -16,7 +16,7 @@
                 <div class="modal-content">
                         <div class="form-group">
         <fieldset class="large-5 cell filter-category">
-         <legend style = "font-family: Georgia, 'Times New Roman', Times, serif;" >What category:</legend>
+         <legend style = "font-family: Georgia, 'Times New Roman', Times, serif;" >Filter by Category:</legend>
           <input
             type="checkbox"
             name="filter"
@@ -55,7 +55,6 @@
               </div>
             </div>
 
-<!-- Loop over each object in the projects array -->
 {{#each tables as |table| }}
 
   <div class="card mb-3" style="max-width: 100%;">
@@ -65,7 +64,7 @@
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title" style = "font-family: Georgia, 'Times New Roman', Times, serif;"><a href="/recipe/{{table.id}}">{{table.recipe_name}}</a></h5>
+        <h2 class="card-title" style = "font-family: Georgia, 'Times New Roman', Times, serif;"><a href="/recipe/{{table.id}}">{{table.recipe_name}}</a></h2>
         <p class="card-text"style = "font-family: Georgia, 'Times New Roman', Times, serif;">{{table.description}}</p>
         <p class="card-text"style = "font-family: Georgia, 'Times New Roman', Times, serif;"><small class="text-muted">Uploaded by {{table.user.user_name}}</small></p>
       </div>

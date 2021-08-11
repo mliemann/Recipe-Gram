@@ -1,6 +1,3 @@
-/* eslint-disable no-empty */
-/* eslint-disable no-unused-vars */
-/* eslint-disable vars-on-top */
 const router = require('express').Router();
 const { Table, User, Like } = require('../models');
 const withAuth = require('../utils/auth');
@@ -10,11 +7,8 @@ var Op = Sequelize.Op;
 router.get('/', async (req, res) => {
   try {
     console.log(req.session);
-    // var user_id;
     if (req.session && req.session.logged_in) {
-      // user_id = req.session.user_id
     }
-    // Get all projects and JOIN with user data
     const tableData = await Table.findAll({
       include: [
         {
@@ -27,10 +21,8 @@ router.get('/', async (req, res) => {
        }
     });
 
-    // Serialize data so the template can read it
     const tables = tableData.map((table) => table.get({ plain: true }));
 
-    // Pass serialized data and session flag into template
     res.render('homepage', { 
       tables, 
       logged_in: req.session.logged_in 
@@ -78,10 +70,8 @@ router.get('/recipe/:id', async (req, res) => {
   }
 });
 
-// Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
   try {
-    // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
       include: [Table],
@@ -99,7 +89,6 @@ router.get('/profile', withAuth, async (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-  // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
     res.redirect('/profile');
     return;
@@ -108,7 +97,6 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-// Still working on getting this to go to the signup page
 router.get('/signup', (req, res) => {
 
   if (req.session.logged_in) {
@@ -119,10 +107,36 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
+router.get("/filtered", async (req, res) => {
+  try {
+    console.log(req.session);
+    if (req.session && req.session.logged_in) {
+    }
+    const tableData = await Table.findAll({
+      include: [
+        {
+          model: User,
+          attributes: ['user_name'],
+        },
+      ],
+      where: {
+        visibility: true,
+       }
+    });
+
+    const tables = tableData.map((table) => table.get({ plain: true }));
+
+    res.render('homepage', { 
+      tables, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 router.get("/filtered/:id", async (req, res) => {
   try {
-    // Get all projects and JOIN with user data
     const filterData = await Table.findAll({
       where: {
         visibility: true,
@@ -138,10 +152,8 @@ router.get("/filtered/:id", async (req, res) => {
       ]
     });
 
-    // Serialize data so the template can read it
     const filters = filterData.map((filter) => filter.get({ plain: true }));
 
-    // Pass serialized data and session flag into template
     res.render("filtered", {
       filters,
       logged_in: req.session.logged_in,
@@ -156,7 +168,6 @@ router.get('/private', async (req, res) => {
     console.log(req.session);
     if (req.session && req.session.logged_in) {
     }
-    // Get all projects and JOIN with user data
     const secretData = await Table.findAll({
       include: [
         {

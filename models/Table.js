@@ -18,13 +18,6 @@ Table.init(
         notEmpty: true,
       },
     },
-    // category: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    //   validate:{
-    //     notEmpty: true,
-    //   }
-    // },
     visibility: {
       type: DataTypes.BOOLEAN,
     },

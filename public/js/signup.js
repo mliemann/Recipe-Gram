@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const signupFormHandler = async (event) => {
   event.preventDefault();
 
