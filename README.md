@@ -1,6 +1,14 @@
 ![Github License](https://img.shields.io/badge/license-none-blue.svg)
 
-<img src="Assets/one.png">
+<img src="Assets/four.png">
+<img src="Assets/five.png">
+<img src="Assets/six.png">
+<img src="Assets/seven.png">
+<img src="Assets/eight.png">
+<img src="Assets/nine.png">
+<img src="Assets/ten.png">
+<img src="Assets/eleven.png">
+<img src="Assets/twelve.png">
 
 https://github.com/mliemann/Recipe-Gram
 https://recipe-gram-best-team.herokuapp.com/
