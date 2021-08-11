@@ -27,7 +27,7 @@ imageForm.addEventListener("submit", async (event) => {
     console.log("successful empty file");
 
     imageUrl =
-      "https://cdn2.vectorstock.com/i/thumb-large/08/86/grandma-granny-baker-cook-loaf-bread-vector-1590886.jpg";
+      "https://static.wixstatic.com/media/79252d_03581aef9c324a42b48c22cd6fb9c9c7.jpg/v1/fill/w_388,h_382,al_c,lg_1,q_80/79252d_03581aef9c324a42b48c22cd6fb9c9c7.webp";
     console.log(imageUrl);
 
     newFormHandler();
