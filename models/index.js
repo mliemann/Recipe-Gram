@@ -1,6 +1,7 @@
 const User = require("./User");
 const Table = require("./Table");
 const Category = require("./Category");
+const Like = require("./Like");
 
 User.hasMany(Table, {
   foreignKey: "user_id",
@@ -20,8 +21,19 @@ Table.belongsTo(Category, {
   onDelete: "CASCADE",
 });
 
+Table.hasMany(Like, {
+  foreignKey: "recipe_id",
+  onDelete: "CASCADE",
+});
+
+User.hasMany(Like, {
+  foreignKey: "user_id",
+  onDelete: "CASCADE",
+});
+
 module.exports = {
   User,
   Table,
   Category,
+  Like,
 };
