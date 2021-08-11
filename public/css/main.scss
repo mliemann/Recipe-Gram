@@ -1,16 +1,30 @@
+body {
+  background-image: url(/css/three.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
+.recipe-card {
+  width: 50%;
+}
 
-@import "node_modules/bootstrap/scss/bootstrap";
-
-
-
-  body {
-      background-image: url(/css/three.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+@media (max-width: 450px) {
+  .display-4 {
+    font-size: 42px;
   }
+}
 
-  @media (max-width: 450px) {
-    .display-4 {font-size: 42px;}
+@media (max-width: 1000px) {
+  .recipe-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 390px)
+{
+.modal-dialog 
+    {max-width: 300px;
+    margin: 1.75rem auto;
+}
 }

@@ -1,7 +1,8 @@
-<div class="card mx-auto"style="width: 40rem;">
-  <img class="card-img-top" src= {{url}} alt="recipe image" style="width:auto;height:auto;">
+<div class="container-fluid mt-5">
+<div class="recipe-card card mx-auto">
+  <img class="card-img-top" src= {{url}} alt="recipe image">
   <div class="card-body">
-    <div style = "font-family: Georgia, 'Times New Roman', Times, serif; width: 15%" class = "position-absolute top-0 start-0 border border-light rounded">
+    <div style = "font-family: Georgia, 'Times New Roman', Times, serif;" class = "position-absolute top-0 start-0 border border-light rounded">
       {{#if logged_in}}
       <button data-recipe-id = "{{id}}" id = "like-button" onclick = "onLikeRecipe(event)" class="btn btn-info btn-sm">{{like_action}}</button>
       <span id = "num-likes">{{total_likes}}</span>
@@ -9,7 +10,8 @@
       <span id = "num-likes">{{total_likes}} Likes</span>
       {{/if}}
     </div>
-    <h1 style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="card-title text-center">{{recipe_name}}</h1>
+    </br>
+    <h1 style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="card-title text-center mt-3">{{recipe_name}}</h1>
     <p style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="card-text text-center">{{description}}</p>
     
   </div>
@@ -18,4 +20,5 @@
     <li style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="list-group-item text-center">{{directions}}</li>
     <li style = "font-family: Georgia, 'Times New Roman', Times, serif;" class="list-group-item text-center">Uploaded by {{user.user_name}}</li>
   </ul>
+</div>
 </div>
