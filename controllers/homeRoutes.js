@@ -54,17 +54,24 @@ router.get('/recipe/:id', async (req, res) => {
     });
 
     const table = tableData.get({ plain: true });
-
     const likeCount = await Like.count({
       where: {
         recipe_id: req.params.id,
       }
-    })
+    });
+    var userCount = 0;
+    if(req.session.user_id){
+      userCount = await Like.count({
+        where: {[Op.and]:[{recipe_id: req.params.id}, {user_id: req.session.user_id}]}
+      });
+    }
+    
 
     res.render('recipe', {
       ...table,
       logged_in: req.session.logged_in,
       total_likes: likeCount,
+      like_action: userCount >= 1 ? "Unlike": "Like",
     });
   } catch (err) {
     res.status(500).json(err);
@@ -173,6 +180,26 @@ router.get('/private', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+router.post('/recipe/:id/like', async (req,res) => {
+  const action = req.body.action;
+  if (!req.session.logged_in){
+    res.status(500).end();
+    return; 
+  }
+
+  if (action === "like"){
+    Like.create({
+      recipe_id: req.params.id,
+      user_id: req.session.user_id
+    });
+  } else {
+    Like.destroy({
+      where: {[Op.and]:[{recipe_id: req.params.id}, {user_id: req.session.user_id}]}
+    });
+  }
+  res.status(200).end();
+})
 
 
 
