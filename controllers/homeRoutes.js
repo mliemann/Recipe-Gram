@@ -93,6 +93,33 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
+router.get("/filtered", async (req, res) => {
+  try {
+    console.log(req.session);
+    if (req.session && req.session.logged_in) {
+    }
+    const tableData = await Table.findAll({
+      include: [
+        {
+          model: User,
+          attributes: ['user_name'],
+        },
+      ],
+      where: {
+        visibility: true,
+       }
+    });
+
+    const tables = tableData.map((table) => table.get({ plain: true }));
+
+    res.render('homepage', { 
+      tables, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 router.get("/filtered/:id", async (req, res) => {
   try {
