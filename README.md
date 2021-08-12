@@ -36,7 +36,7 @@ No installation needed.
 In this application you upload recipes that you would like stored digitally. You create a login that stores the recipes and can be accessed once logged in. If a user sets the recipe to public, then you can view the recipe without needing to log in.
 
 ## Technologies
-Technologies used: JavaScript, SQL, Express, Sequalize, HTML, Handlebars, CSS, Bootstrap, Node.js, MySQL, AWS S3, SASS
+Technologies used: JavaScript, SQL, Express, Sequelize, HTML, Handlebars, CSS, Bootstrap, Node.js, AWS S3, SASS
 
 ## License
 License: None
